@@ -43,51 +43,38 @@
 
 <body>
     <!-- Menu navigation stuff -->
-    <ul>
-        <!-- Página principal: index.html -->
-        <li><a href="/index.html" id="pp">Página
-                Principal</a></li>
-        <!-- Informações Gerais: info.html -->
-        <li><a href="/src/pt/info.html" id="info">Informações
-                Gerais</a></li>
-        <!-- Inscrição: inscricao.html -->
-        <li><a href="/src/pt/inscricao.html" id="inscricao">Inscrição</a></li>
-        <!-- Notícias: noticias.html -->
-        <li><a href="/src/pt/noticias.html" id="noticias">Notícias</a></li>
-        <!-- André Bertel: abertel.html -->
-        <li><a href="/src/pt/abertel.html" id="abertel">André
-                Bertel</a></li>
-        <!-- Cidade de Braga: braga-cidade.html; braga-transportes.html; braga-alojamento.html; braga-onde_comer.html; braga-turismo.html-->
-        <li class="dropdown">
-            <a href="javascript:void(0) class=" dropbtn">Braga</a>
+    <div class="topnav" id="myTopnav">
+        <a href="/index.html" class="active">Página Principal</a>
+        <a href="/src/pt/info.html">Informações Gerais</a>
+        <a href="/src/pt/inscricao.html">Inscrição</a>
+        <a href="/src/pt/noticias.html">Notícias</a>
+        <a href="/src/pt/abertel.html">André Bertel</a>
+        <div class="dropdown">
+            <button class="dropbtn">Braga
+                <i class="fa fa-caret-down"></i>
+            </button>
             <div class="dropdown-content">
                 <a href="/src/pt/braga-cidade.html">Cidade</a>
                 <a href="/src/pt/braga-transportes.html">Transportes</a>
                 <a href="/src/pt/braga-alojamento.html">Alojamento</a>
-                <a href="/src/pt/braga-onde_comer.html">Onde
-                    Comer</a>
+                <a href="/src/pt/braga-onde_comer.html">Onde Comer</a>
                 <a href="/src/pt/braga-turismo.html">Turismo</a>
             </div>
-        </li>
-        <!-- Karate Braga: clube.html-->
-        <li><a href="/src/pt/clube.html" id="clube">Karate
-                Braga</a></li>
-        <!-- Contactos: contactos.html -->
-        <li><a href="/src/pt/contactos.html" id="contactos">Contactos</a></li>
-        <!-- Apoios: apoios.html -->
-        <li><a href="/src/pt/apoios.html" id="apoios">Apoios</a>
-        </li>
-        <!-- Imagens: imagens2019.html; etc -->
-        <li class="dropdown">
-            <a href="javascript:void(0) class=" dropbtn">Imagens</a>
+        </div>
+        <a href="/src/pt/clube.html">Karate Braga</a>
+        <a href="/src/pt/contactos.html">Contactos</a>
+        <a href="/src/pt/apoios.html">Apoios</a>
+        <div class="dropdown">
+            <button class="dropbtn">Imagens
+                <i class="fa fa-caret-down"></i>
+            </button>
             <div class="dropdown-content">
-                <a href="/src/pt/imagens2019.html">Seminário
-                    Imagens 2019</a>
+                <a href="/src/pt/imagens2019.html">Seminário Imagens 2019</a>
             </div>
-        </li>
-        <!-- Imprensa: imprensa.html-->
-        <li><a href="/src/pt/imprensa.html" id="imprensa">Imprensa</a></li>
-    </ul>
+        </div>
+        <a href="/src/pt/imprensa.html">Imprensa</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
 
     <!-- Main stuff -->
     <div class="main">
@@ -124,6 +111,18 @@
         </center>
     </div>
 
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 
 </body>
 
