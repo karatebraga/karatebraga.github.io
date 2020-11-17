@@ -1,42 +1,34 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="/Users/tiagotg/Desktop/Karate/Projetos/1_Website/root/style/style.css">
+<link rel="stylesheet" href="/style/style.css">
+<link rel="stylesheet" href="/style/footer.css">
+<link rel="stylesheet" href="/style/header.css">
+<link rel="stylesheet" href="/style/main.css">
+<link rel="stylesheet" href="/style/navmenu.css">
+
 <!-- Page head -->
 
 <head>
+    <!-- Page title stuff-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon"
-        href="/Users/tiagotg/Desktop/Karate/Projetos/1_Website/root/images/logo.jpg" />
-    <title>Clube Karate Braga</title>
-</head>
+    <link rel="shortcut icon" type="image/x-icon" href="../../images/logo.jpg" />
+    <title>O Nosso Clube</title>
 
-
-<!-- Page body -->
-
-<body>
     <!-- Header stuff -->
     <div class="header">
         <center>
             <!-- Bandeira portuguesa -->
-            <a href="/Users/tiagotg/Desktop/Karate/Projetos/1_Website/root/html/pt/pagprincipal.html"><img
-                    style="width:3%;" src="/Users/tiagotg/Desktop/Karate/Projetos/1_Website/root/images/portugal.png"
-                    alt="Portugal"></a>
+            <a href="../../index.html"><img style="width:5%;" src="/images/portugal.png" alt="Portugal"></a>
             <!-- Bandeira espanhola -->
-            <a href="/Users/tiagotg/Desktop/Karate/Projetos/1_Website/root/html/es/pagprincipal.html"><img
-                    style="width:3%;" src="/Users/tiagotg/Desktop/Karate/Projetos/1_Website/root/images/espanha.png"
-                    alt="Español"></a>
+            <a href="../es/index.html"><img style="width:5%;" src="/images/espanha.png" alt="Español"></a>
             <!-- Bandeira francesa -->
-            <a href="/Users/tiagotg/Desktop/Karate/Projetos/1_Website/root/html/fr/pagprincipal.html"><img
-                    style="width:3%;" src="/Users/tiagotg/Desktop/Karate/Projetos/1_Website/root/images/franca.png"
-                    alt="Français"></a>
+            <a href="../fr/index.html"><img style="width:5%;" src="/images/franca.png" alt="Français"></a>
             <!-- Bandeira inglesa -->
-            <a href="/Users/tiagotg/Desktop/Karate/Projetos/1_Website/root/html/en/pagprincipal.html"><img
-                    style="width:3%;" src="/Users/tiagotg/Desktop/Karate/Projetos/1_Website/root/images/ingles.png"
-                    alt="English"></a>
+            <a href="../en/index.html"><img style="width:5%;" src="/images/ingles.png" alt="English"></a>
         </center>
 
         <!-- Botão de aviso e informações-->
-        <a href="/Users/tiagotg/Desktop/Karate/Projetos/1_Website/root/html/pt/contactos.html">
+        <a href="/contactos.html">
             <button class="button button2">
                 Seminário Cancelado!
             </button>
@@ -45,26 +37,57 @@
         <p style="font-size:60%;"><u>Brevemente mais informações.</u></p>
         <p style="font-size:60%;">Siga-nos no facebook para receber todas as informações.</p>
     </div>
+</head>
 
-    <!-- Side nav stuff -->
-    <div id="mySidenav" class="sidenav">
-        <a href="/Users/tiagotg/Desktop/Karate/Projetos/1_Website/root/html/pt/pagprincipal.html" id="pp">Página
-            Principal</a>
-        <a href="/Users/tiagotg/Desktop/Karate/Projetos/1_Website/root/html/pt/info.html" id="info">Informações
-            Gerais</a>
-        <a href="/Users/tiagotg/Desktop/Karate/Projetos/1_Website/root/html/pt/inscricao.html"
-            id="inscricao">Inscrição</a>
-        <a href="/Users/tiagotg/Desktop/Karate/Projetos/1_Website/root/html/pt/noticias.html" id="noticias">Notícias</a>
-        <a href="/Users/tiagotg/Desktop/Karate/Projetos/1_Website/root/html/pt/abertel.html" id="abertel">André
-            Bertel</a>
-        <a href="/Users/tiagotg/Desktop/Karate/Projetos/1_Website/root/html/pt/braga.html" id="braga">Braga</a>
-        <a href="/Users/tiagotg/Desktop/Karate/Projetos/1_Website/root/html/pt/clube.html" id="clube">Karate Braga</a>
-        <a href="/Users/tiagotg/Desktop/Karate/Projetos/1_Website/root/html/pt/contactos.html"
-            id="contactos">Contactos</a>
-        <a href="/Users/tiagotg/Desktop/Karate/Projetos/1_Website/root/html/pt/apoios.html" id="apoios">Apoios</a>
-        <a href="/Users/tiagotg/Desktop/Karate/Projetos/1_Website/root/html/pt/imagens.html" id="imagens">Imagens</a>
-        <a href="/Users/tiagotg/Desktop/Karate/Projetos/1_Website/root/html/pt/imprensa.html" id="imprensa">Imprensa</a>
-    </div>
+<!-- Page body -->
+
+<body>
+    <!-- Menu navigation stuff -->
+    <ul>
+        <!-- Página principal: index.html -->
+        <li><a href="../../index.html" id="pp">Página
+                Principal</a></li>
+        <!-- Informações Gerais: info.html -->
+        <li><a href="/info.html" id="info">Informações
+                Gerais</a></li>
+        <!-- Inscrição: inscricao.html -->
+        <li><a href="/inscricao.html" id="inscricao">Inscrição</a></li>
+        <!-- Notícias: noticias.html -->
+        <li><a href="/noticias.html" id="noticias">Notícias</a></li>
+        <!-- André Bertel: abertel.html -->
+        <li><a href="/abertel.html" id="abertel">André
+                Bertel</a></li>
+        <!-- Cidade de Braga: braga-cidade.html; braga-transportes.html; braga-alojamento.html; braga-onde_comer.html; braga-turismo.html-->
+        <li class="dropdown">
+            <a href="javascript:void(0) class=" dropbtn">Braga</a>
+            <div class="dropdown-content">
+                <a href="/braga-cidade.html">Cidade</a>
+                <a href="/braga-transportes.html">Transportes</a>
+                <a href="/braga-alojamento.html">Alojamento</a>
+                <a href="/braga-onde_comer.html">Onde
+                    Comer</a>
+                <a href="/braga-turismo.html">Turismo</a>
+            </div>
+        </li>
+        <!-- Karate Braga: clube.html-->
+        <li><a href="/clube.html" id="clube">Karate
+                Braga</a></li>
+        <!-- Contactos: contactos.html -->
+        <li><a href="/contactos.html" id="contactos">Contactos</a></li>
+        <!-- Apoios: apoios.html -->
+        <li><a href="/apoios.html" id="apoios">Apoios</a>
+        </li>
+        <!-- Imagens: imagens2019.html; etc -->
+        <li class="dropdown">
+            <a href="javascript:void(0) class=" dropbtn">Imagens</a>
+            <div class="dropdown-content">
+                <a href="/imagens2019.html">Seminário
+                    Imagens 2019</a>
+            </div>
+        </li>
+        <!-- Imprensa: imprensa.html-->
+        <li><a href="/imprensa.html" id="imprensa">Imprensa</a></li>
+    </ul>
 
     <div class="main">
         <center>
