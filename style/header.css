@@ -1,0 +1,23 @@
+/* header */
+.header {
+    height: 5%;
+    position: static;
+    padding: 5px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+}
+
+/* cor do button2: header*/
+.button2 {
+    background-color: rgb(163, 46, 46);
+    color: white;
+    border: 2px solid grey;
+}
+
+/* tratar do hover do button*/
+.button2:hover {
+    background-color: rgb(214, 148, 61);
+    color: white;
+    border: 2px solid rgb(75, 75, 75);
+}
