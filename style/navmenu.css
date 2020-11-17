@@ -16,7 +16,7 @@ body {margin:0;font-family:Arial}
 }
 
 .active {
-  background-color: #4CAF50;
+  background-color: #af4c4c;
   color: white;
 }
 
@@ -64,8 +64,8 @@ body {margin:0;font-family:Arial}
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: black;
+  color: white;
 }
 
 .dropdown:hover .dropdown-content {
