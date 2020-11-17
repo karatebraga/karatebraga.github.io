@@ -1,1 +1,79 @@
-<h1> hello world <h1>
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="/style/style.css">
+<link rel="stylesheet" href="/style/footer.css">
+<link rel="stylesheet" href="/style/header.css">
+<link rel="stylesheet" href="/style/main.css">
+<link rel="stylesheet" href="/style/navmenu.css">
+
+<!-- Page head -->
+
+<head>
+    <!-- Page title stuff-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon"
+        href="/images/logo.jpg" />
+    <title>Página Principal</title>
+
+    <!-- Script to load header and other common stuff-->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+
+</head>
+
+<!-- Page body -->
+
+<body>
+
+    <div id="header"></div>
+    <div id="content"></div>
+
+    <script>
+        jQuery(document).ready(function ($) {
+            $("header").load("header.html");
+            $("content").load("content.html");
+        });
+    </script>
+
+
+    <!-- Main stuff -->
+    <div class="main">
+        <center>
+            <p style="font-size:200%;">Seminário Internacional</p>
+            <h1>André Bertel</h1>
+            <h3><i>Braga - Portugal</i></h3>
+
+
+            <a href="/src/pt/inscricao.html"><button
+                    class="button button1">Inscrição</button></a>
+
+            <p style="font-size:50%;"><i>(Clique aqui para se inscrever)</i></p>
+            <p>___________________________________________________________________</p>
+            <img style="width:50%;" src="/images/cartaz.png"
+                alt="Cartaz">
+
+            <p>___________________________________________________________________</p>
+
+            <h4><i><u>Horário dos Treinos</u></i></h4>
+            <p>Sábado Manhã: ----------------</p>
+            <p>Domingo Manhã: ----------------</p>
+
+            <p>___________________________________________________________________</p>
+
+            <h4><i><u>Local de treino:</u></i></h4>
+            <p>Pavilhão Desportivo da EB 2/3 de Real</p>
+            <p>(Av. de São Frutuoso, 4700-291 Real, Braga, Portugal)</p>
+
+            <p>___________________________________________________________________</p>
+
+            <h4><i><u>Local do jantar:</u></i></h4>
+            <p>Centro Escolar de São Frutuoso</p>
+            <p>Rua de S Jerónimo, 4720-292 Real Braga (ao lado do pavilhão)</p>
+
+        </center>
+    </div>
+
+
+</body>
+
+</html>
