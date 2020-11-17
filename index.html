@@ -14,28 +14,98 @@
     <link rel="shortcut icon" type="image/x-icon"
         href="/images/logo.jpg" />
     <title>Página Principal</title>
+    
+    <!-- Header stuff -->
+    <div class="header">
+        <center>
+            <!-- Bandeira portuguesa -->
+            <a href="/Users/tiagotg/Desktop/Karate/Projetos/1_Website/root/src/pt/index.html"><img style="width:3%;"
+                    src="/images/portugal.png" alt="Portugal"></a>
+            <!-- Bandeira espanhola -->
+            <a href="/Users/tiagotg/Desktop/Karate/Projetos/1_Website/root/src/es/index.html"><img style="width:3%;"
+                    src="/images/espanha.png" alt="Español"></a>
+            <!-- Bandeira francesa -->
+            <a href="/Users/tiagotg/Desktop/Karate/Projetos/1_Website/root/src/fr/index.html"><img style="width:3%;"
+                    src="/images/franca.png" alt="Français"></a>
+            <!-- Bandeira inglesa -->
+            <a href="/Users/tiagotg/Desktop/Karate/Projetos/1_Website/root/src/en/index.html"><img style="width:3%;"
+                    src="/images/ingles.png" alt="English"></a>
+        </center>
 
-    <!-- Script to load header and other common stuff-->
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-
-
+        <!-- Botão de aviso e informações-->
+        <a href="/src/pt/contactos.html">
+            <button class="button button2">
+                Seminário Cancelado!
+            </button>
+        </a>
+        <p style="font-size:60%;">Devido às circunstâncias atuais, o seminário encontra-se cancelado.</p>
+        <p style="font-size:60%;"><u>Brevemente mais informações.</u></p>
+        <p style="font-size:60%;">Siga-nos no facebook para receber todas as informações.</p>
+    </div>
 </head>
 
 <!-- Page body -->
 
 <body>
-
-    <div id="header"></div>
-    <div id="content"></div>
-
-    <script>
-        jQuery(document).ready(function ($) {
-            $("header").load("header.html");
-            $("content").load("content.html");
-        });
-    </script>
-
-
+    <!-- Menu navigation stuff -->
+    <ul>
+        <!-- Página principal: index.html -->
+        <li><a href="/index.html" id="pp">Página
+                Principal</a></li>
+        <!-- Informações Gerais: info.html -->
+        <li><a href="/src/pt/info.html" id="info">Informações
+                Gerais</a></li>
+        <!-- Inscrição: inscricao.html -->
+        <li><a href="/src/pt/inscricao.html"
+                id="inscricao">Inscrição</a></li>
+        <!-- Notícias: noticias.html -->
+        <li><a href="/src/pt/noticias.html"
+                id="noticias">Notícias</a></li>
+        <!-- André Bertel: abertel.html -->
+        <li><a href="/src/pt/abertel.html" id="abertel">André
+                Bertel</a></li>
+        <!-- Cidade de Braga: braga-cidade.html; braga-transportes.html; braga-alojamento.html; braga-onde_comer.html; braga-turismo.html-->
+        <li class="dropdown">
+            <a href="javascript:void(0) class=" dropbtn">Braga</a>
+            <div class="dropdown-content">
+                <a
+                    href="/src/pt/braga-cidade.html">Cidade</a>
+                <a
+                    href="/src/pt/braga-transportes.html">Transportes</a>
+                <a
+                    href="/src/pt/braga-alojamento.html">Alojamento</a>
+                <a href="/src/pt/braga-onde_comer.html">Onde
+                    Comer</a>
+                <a
+                    href="/src/pt/braga-turismo.html">Turismo</a>
+            </div>
+        </li>
+        <!-- Karate Braga: clube.html-->
+        <li><a href="/src/pt/clube.html" id="clube">Karate
+                Braga</a></li>
+        <!-- Contactos: contactos.html -->
+        <li><a href="/src/pt/contactos.html"
+                id="contactos">Contactos</a></li>
+        <!-- Apoios: apoios.html -->
+        <li><a href="/src/pt/apoios.html"
+                id="apoios">Apoios</a>
+        </li>
+        <!-- Imagens: imagens2019.html; etc -->
+        <li class="dropdown">
+            <a href="javascript:void(0) class=" dropbtn">Imagens</a>
+            <div class="dropdown-content">
+                <a href="/src/pt/imagens2019.html">Seminário
+                    Imagens 2019</a>
+            </div>
+        </li>
+        <!-- Imprensa: imprensa.html-->
+        <li><a href="/src/pt/imprensa.html"
+                id="imprensa">Imprensa</a></li>
+        <li>
+            <a href="#" onClick="index()">Olá</a>
+        </li>
+    </ul>
+    
     <!-- Main stuff -->
     <div class="main">
         <center>
