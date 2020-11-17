@@ -1,0 +1,42 @@
+/* especificações da página main*/
+.main {
+    text-align: center;
+    /* Same as the width of the sidenav */
+    font-size: 20px;
+    /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+/* button de inscrição */
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* cor do button1: página principal*/
+.button1 {
+    background-color: grey;
+    color: black;
+    border: 2px solid grey;
+}
+
+/* tratar do hover do button*/
+.button1:hover {
+    background-color: rgb(75, 75, 75);
+    color: black;
+    border: 2px solid rgb(75, 75, 75);
+}
+
+body {
+    /*tipo de letra geral*/
+    font-family: "Lato", sans-serif;
+    /*background*/
+    background-color: #ffffff;
+}
