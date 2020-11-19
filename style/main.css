@@ -43,3 +43,20 @@ body {
     /*background*/
     background-color: #ffffff;
 }
+
+/* alinhar texto */
+div.align_center {
+    text-align: center;
+  }
+  
+  div.align_left {
+    text-align: left;
+  }
+  
+  div.align_right {
+    text-align: right;
+  } 
+  
+  div.align_justify {
+    text-align: justify;
+  } 
