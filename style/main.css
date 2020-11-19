@@ -85,6 +85,7 @@ tr:nth-child(even) {
 }
 
 /* hyperlink colors */
+/*
 a:link {
     color: rgb(255, 100, 100);
     background-color: transparent;
@@ -102,3 +103,4 @@ a:hover {
   background-color: transparent;
   text-decoration: underline;
 }
+*/
