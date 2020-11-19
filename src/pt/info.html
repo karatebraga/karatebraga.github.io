@@ -37,6 +37,11 @@
         <p style="font-size:60%;"><u>Brevemente mais informações.</u></p>
         <p style="font-size:60%;">Siga-nos no facebook para receber todas as informações.</p>
     </div>
+
+    <!-- Load do mapa desta página -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly"
+        defer></script>
 </head>
 
 <!-- Page body -->
@@ -254,14 +259,14 @@
                 </tr>
                 <tr>
                     <td><b>Contactos</b></td>
-                    <td>Email do seminário: <br><a
-                            href="mailto: abptkaratebraga@gmail.com">abptkaratebraga@gmail.com</a><br>
-                        Email do clube Karate Braga: <br><a
-                            href="mailto: karatesemelhe@hotmail.com">karatesemelhe@hotmail.com</a><br>
-                        Messenger Karate Braga: <br><a
-                            href="https://www.facebook.com/messages/t/karatebraga">www.facebook.com/messages/t/karatebraga</a><br>
-                        Messenger Francisco Pinto: <br><a
-                            href="https://www.facebook.com/messages/t/franciscojmpinto">www.facebook.com/messages/t/franciscojmpinto</a>
+                    <td>Email do seminário: <br><a href="mailto: abptkaratebraga@gmail.com"
+                            target="_blank">abptkaratebraga@gmail.com</a><br>
+                        Email do clube Karate Braga: <br><a href="mailto: karatesemelhe@hotmail.com"
+                            target="_blank">karatesemelhe@hotmail.com</a><br>
+                        Messenger Karate Braga: <br><a href="https://www.facebook.com/messages/t/karatebraga"
+                            target="_blank">www.facebook.com/messages/t/karatebraga</a><br>
+                        Messenger Francisco Pinto: <br><a href="https://www.facebook.com/messages/t/franciscojmpinto"
+                            target="_blank">www.facebook.com/messages/t/franciscojmpinto</a>
                     </td>
                 </tr>
             </table>
@@ -272,6 +277,7 @@
         <div class="align_center">
             <h1 id="mapa"><u>Mapa do Pavilhão Desportivo</u></h1>
         </div>
+        <div id="map" class="center"></div>
 
     </div>
 
@@ -283,6 +289,22 @@
             } else {
                 x.className = "topnav";
             }
+        }
+
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            const uluru = { lat: -25.344, lng: 131.036 };
+            // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 4,
+                center: uluru,
+            });
+            // The marker, positioned at Uluru
+            const marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+            });
         }
     </script>
 
