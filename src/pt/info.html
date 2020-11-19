@@ -38,6 +38,20 @@
         <p style="font-size:60%;">Siga-nos no facebook para receber todas as informações.</p>
     </div>
 
+    <!-- Load do mapa -->
+    <script>
+        function myMap() {
+            var mapProp = {
+                center: new google.maps.LatLng(51.508742, -0.120850),
+                zoom: 5,
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+        }
+    </script>
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4EdNA_SaGq82bt28JpxJJ-U2UREl4OY4&callback=myMap"></script>
+
 </head>
 
 <!-- Page body -->
@@ -275,18 +289,7 @@
         </div>
         <!-- Load do mapa desta página -->
         <div id="googleMap" style="width:75%;height:400px;"></div>
-        <script>
-            function myMap() {
-                var mapProp = {
-                    center: new google.maps.LatLng(51.508742, -0.120850),
-                    zoom: 5,
-                };
-                var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
-            }
-        </script>
 
-        <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4EdNA_SaGq82bt28JpxJJ-U2UREl4OY4&callback=myMap"></script>
 
     </div>
 
