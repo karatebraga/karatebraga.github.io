@@ -36,9 +36,10 @@
     border: 2px solid rgb(75, 75, 75);
 }
 
+
 body {
     /*tipo de letra geral*/
-    font-family: "Lato", sans-serif;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     /*background*/
     background-color: #ffffff;
 }
