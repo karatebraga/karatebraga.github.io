@@ -86,9 +86,9 @@ tr:nth-child(even) {
 
 /* hyperlink colors */
 a:link {
-  color: #af4c4c;
-  background-color: transparent;
-  text-decoration: none;
+    color: rgb(255, 100, 100);
+    background-color: transparent;
+    text-decoration: none;
 }
 
 a:visited {
