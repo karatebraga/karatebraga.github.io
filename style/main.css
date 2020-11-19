@@ -61,7 +61,12 @@ div.align_center {
   
   div.align_justify {
     text-align: justify;
-  } 
+  }
+/* alinar elementos */
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 /* tabelas de info */
   table {
