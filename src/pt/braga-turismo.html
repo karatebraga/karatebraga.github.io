@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="/style/style.css">
+<link rel="stylesheet" href="/style/footer.css">
+<link rel="stylesheet" href="/style/header.css">
+<link rel="stylesheet" href="/style/main.css">
+<link rel="stylesheet" href="/style/navmenu.css">
+
+<!-- Page head -->
+
+<head>
+    <!-- Page title stuff-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/logo.jpg" />
+    <title>Cidade de Braga</title>
+
+
+    <!-- Header stuff -->
+    <div class="header">
+        <center>
+            <!-- Bandeira portuguesa -->
+            <a href="/index"><img style="width:50px;" src="/images/portugal.png" alt="Portugal"></a>
+            <!-- Bandeira espanhola -->
+            <a href="src/es/index"><img style="width:50px;" src="/images/espanha.png" alt="Español"></a>
+            <!-- Bandeira francesa -->
+            <a href="src/fr/index"><img style="width:50px;" src="/images/franca.png" alt="Français"></a>
+            <!-- Bandeira inglesa -->
+            <a href="src/en/index"><img style="width:50px;" src="/images/ingles.png" alt="English"></a>
+        </center>
+
+        <!-- Botão de aviso e informações-->
+        <a href="/src/pt/contactos">
+            <button class="button button2">
+                Seminário Cancelado!
+            </button>
+        </a>
+        <p style="font-size:60%;">Devido às circunstâncias atuais, o seminário encontra-se cancelado.</p>
+        <p style="font-size:60%;"><u>Brevemente mais informações.</u></p>
+        <p style="font-size:60%;">Siga-nos no facebook para receber todas as informações.</p>
+    </div>
+</head>
+
+<!-- Page body -->
+
+<body>
+    <!-- Menu navigation stuff -->
+    <div class="topnav" id="myTopnav">
+        <a href="/index" class="active">Página Principal</a>
+        <a href="/src/pt/info">Informações Gerais</a>
+        <a href="/src/pt/inscricao">Inscrição</a>
+        <a href="/src/pt/noticias">Notícias</a>
+        <a href="/src/pt/abertel">André Bertel</a>
+        <div class="dropdown">
+            <button class="dropbtn">Braga
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="/src/pt/braga-cidade">Cidade</a>
+                <a href="/src/pt/braga-transportes">Transportes</a>
+                <a href="/src/pt/braga-alojamento">Alojamento</a>
+                <a href="/src/pt/braga-onde_comer">Onde Comer</a>
+                <a href="/src/pt/braga-turismo">Turismo</a>
+            </div>
+        </div>
+        <a href="/src/pt/clube">Karate Braga</a>
+        <a href="/src/pt/contactos">Contactos</a>
+        <a href="/src/pt/apoios">Apoios</a>
+        <div class="dropdown">
+            <button class="dropbtn">Imagens
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="/src/pt/imagens2019">Seminário Imagens 2019</a>
+            </div>
+        </div>
+        <a href="/src/pt/imprensa">Imprensa</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <div class="main">
+        <div class="align_center">
+            <p><i><u>
+                        Página em construção.
+                    </u></i></p>
+            <br>
+            <br>
+            <h2>Turismo<br>na Cidade de Braga</h2>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <div class="footer">
+        <p>Seminário cancelado. Mantenha-se seguro!</p>
+    </div>
+
+</body>
+
+</html>
