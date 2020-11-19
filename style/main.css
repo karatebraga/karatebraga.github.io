@@ -1,7 +1,7 @@
 /* especificações da página main*/
 .main {
     /*text-align: center; */
-    font-size: 15px;
+    font-size: 18px;
     /* Increased text to enable scrolling */
     padding: 0px 10px;
     /* margin so the footer doesn't hide any content */
@@ -70,7 +70,6 @@ div.align_center {
 /* tabelas de info */
   table {
     font-family: arial, sans-serif;
-    font-size: 50%;
     border-collapse: collapse;
     width: 75%;
   }
