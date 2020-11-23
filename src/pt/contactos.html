@@ -87,18 +87,19 @@
             <h2>Contacte-nos!</h2>
             <!-- modify this form HTML and place wherever you want your form -->
 
-            <form action="https://formspree.io/f/mknpvwlz" method="POST" enctype="multipart/form-data">
-                <label>
-                    Email:
-                    <input type="text" name="_replyto">
-                </label>
-                <br>
-                <label>
-                    A sua mensagem:
-                    <input type="text" name="text">
-                </label>
-                <br>
-                <button type="submit">Enviar</button>
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mknpvwlz"
+                method="post">
+                <fieldset id="fs-frm-inputs">
+                    <label for="full-name">O seu Nome</label>
+                    <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                    <label for="email-address">O seu Email</label>
+                    <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                    <label for="message">A sua mensagem</label>
+                    <textarea rows="5" name="message" id="message" placeholder="Introduza aqui a sua mensagem."
+                        required=""></textarea>
+                    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                </fieldset>
+                <input type="submit" value="Submit">
             </form>
         </div>
     </div>
