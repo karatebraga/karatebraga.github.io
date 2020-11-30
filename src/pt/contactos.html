@@ -96,7 +96,7 @@
                 }
 
                 input[type=text]:focus {
-                    border: 3px solid rgb(0, 183, 255);
+                    border: 3px solid #555;
                 }
             </style>
 
@@ -105,15 +105,15 @@
                     <div class="form-group">
                         <div class="form-row">
                             <div class="col">
-                                <input type="text" name="name" class="text" placeholder="O seu nome" required>
+                                <input type="text" name="name" class="form-control" placeholder="O seu nome" required>
                             </div>
                             <div class="col">
-                                <input type="text" name="email" class="text" placeholder="O seu email" required>
+                                <input type="text" name="email" class="form-control" placeholder="O seu email" required>
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="A sua mensagem" class="text" name="message" rows="10"
+                        <textarea type="text" placeholder="A sua mensagem" class="form-control" name="message" rows="10"
                             required></textarea>
                     </div>
                     <input type="hidden" name="_captcha" value="false">
