@@ -43,18 +43,59 @@
 <!-- Page body -->
 
 <body>
+    <!-- Script for the nav menu. If you click on it, it fixes the dropdown. If you click anywhere else, it closes. -->
+    <script>
+        /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+        let closeDropdown = function () {
+
+        }
+        function myFunction1(num) {
+            closeDropdown();
+            let el = document.getElementById("myDropdown" + num);
+            if (el) {
+                el.classList.toggle("show");
+                closeDropdown = function () {
+                    el.classList.remove("show");
+                }
+            } else {
+                closeDropdown = function () {
+                }
+            }
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
     <!-- Menu navigation stuff -->
     <div class="topnav" id="myTopnav">
-        <a href="/index">Página Principal</a>
-        <a href="/src/pt/info" class="active">Informações Gerais</a>
-        <a href="/src/pt/inscricao">Inscrição</a>
-        <a href="/src/pt/noticias">Notícias</a>
-        <a href="/src/pt/abertel">André Bertel</a>
+        <!-- home page -->
+        <a href="/index" class="active">Página Principal</a>
+        <!-- about us -->
         <div class="dropdown">
-            <button class="dropbtn">Braga
+            <button class="dropbtn" onclick="myFunction1(1)">Sobre Nós
                 <i class="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
+            <div class="dropdown-content" id="myDropdown1">
+                <a href="/src/pt/clube">O Nosso Clube</a>
+                <a href="/src/pt/imprensa">Imprensa</a>
+            </div>
+        </div>
+        <!-- about the city -->
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction1(2)">Braga
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown2">
                 <a href="/src/pt/braga-cidade">Cidade</a>
                 <a href="/src/pt/braga-transportes">Transportes</a>
                 <a href="/src/pt/braga-alojamento">Alojamento</a>
@@ -62,20 +103,34 @@
                 <a href="/src/pt/braga-turismo">Turismo</a>
             </div>
         </div>
-        <a href="/src/pt/clube">Karate Braga</a>
-        <a href="/src/pt/contactos">Contactos</a>
-        <a href="/src/pt/apoios">Apoios</a>
+        <!-- Seminar -->
         <div class="dropdown">
-            <button class="dropbtn">Imagens
+            <button class="dropbtn" onclick="myFunction1(3)">Seminário Internacional
                 <i class="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
-                <a href="/src/pt/imagens2019">Seminário Imagens 2019</a>
+            <div class="dropdown-content" id="myDropdown3">
+                <a href="/src/pt/abertel">André Bertel</a>
+                <a href="/src/pt/info">Informações Gerais</a>
+                <a href="/src/pt/inscricao">Inscrição</a>
+                <a href="/src/pt/apoios">Apoios</a>
             </div>
         </div>
-        <a href="/src/pt/imprensa">Imprensa</a>
+        <!-- news -->
+        <a href="/src/pt/noticias">Notícias</a>
+        <!-- images from previous events -->
+        <div class="dropdown">
+            <button class=" dropbtn" onclick="myFunction1(4)">Imagens
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown4">
+                <a href="/src/pt/imagens2019">Seminário 2019</a>
+            </div>
+        </div>
+        <!-- contact us -->
+        <a href="/src/pt/contactos">Contactos</a>
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
+
 
     <!-- Main page stuff -->
 
