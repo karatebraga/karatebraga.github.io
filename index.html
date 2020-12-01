@@ -46,14 +46,22 @@
         function myFunction(num) {
             document.getElementById("myDropdown" + num).classList.toggle("show");
         }
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
     </script>
     <!-- Menu navigation stuff -->
     <div class="topnav" id="myTopnav">
         <!-- home page -->
         <a href="/index" class="active">Página Principal</a>
         <!-- about us -->
-        <div class="dropdown" id="dropdown1" onclick="myFunction(1)">
-            <button class="dropbtn">Sobre Nós
+        <div class="dropdown" id="dropdown1">
+            <button class="dropbtn" onclick="myFunction(1)">Sobre Nós
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
@@ -62,8 +70,8 @@
             </div>
         </div>
         <!-- about the city -->
-        <div class="dropdown" id="dropdown2" onclick="myFunction(2)">
-            <button class="dropbtn">Braga
+        <div class="dropdown" id="dropdown2">
+            <button class="dropbtn" onclick="myFunction(2)">Braga
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
@@ -75,8 +83,8 @@
             </div>
         </div>
         <!-- Seminar -->
-        <div class="dropdown" id="dropdown3" onclick="myFunction(3)">
-            <button class="dropbtn">Seminário Internacional
+        <div class="dropdown" id="dropdown3">
+            <button class="dropbtn" onclick="myFunction(3)">Seminário Internacional
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
@@ -89,8 +97,8 @@
         <!-- news -->
         <a href="/src/pt/noticias">Notícias</a>
         <!-- images from previous events -->
-        <div class="dropdown" id="dropdown4" onclick="myFunction(4)">
-            <button class="dropbtn">Imagens
+        <div class="dropdown" id="dropdown4">
+            <button class="dropbtn" onclick="myFunction(4)">Imagens
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
@@ -99,7 +107,7 @@
         </div>
         <!-- contact us -->
         <a href="/src/pt/contactos">Contactos</a>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        <!-- <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a> -->
     </div>
 
     <!-- Main stuff -->
