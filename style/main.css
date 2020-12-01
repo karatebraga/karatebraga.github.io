@@ -2,8 +2,8 @@
 .main {
     /*text-align: center; */
     font-size: 18px;
-    /* Increased text to enable scrolling */
-    padding: 0px 10px;
+    /* Increased text to enable scrolling
+    padding: 0px 10px;*/
     /* margin so the footer doesn't hide any content */
     margin-bottom: 55px;
     margin-left: 10%;
