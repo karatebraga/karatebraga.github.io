@@ -4,7 +4,7 @@ body {
 }
 
 .topnav {
-  overflow: hidden;
+  /*overflow: hidden;*/
   background-color: #333;
 }
 
@@ -63,7 +63,6 @@ body {
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
-  position: absolute;
   background-color: #555;
   color: white;
 }
