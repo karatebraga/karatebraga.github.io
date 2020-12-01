@@ -44,11 +44,11 @@
 <body>
     <script>
         function myFunction(num) {
-            document.getElementById("myDropdown" + num).classList.toggle("show");
+            document.getElementById("dropdown" + num).classList.toggle("show");
         }
         window.onclick = function (e) {
             if (!e.target.matches('.dropbtn')) {
-                var myDropdown = document.getElementById("myDropdown");
+                var myDropdown = document.getElementById("dropdown");
                 if (myDropdown.classList.contains('show')) {
                     myDropdown.classList.remove('show');
                 }
@@ -107,7 +107,6 @@
         </div>
         <!-- contact us -->
         <a href="/src/pt/contactos">Contactos</a>
-        <!-- <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a> -->
     </div>
 
     <!-- Main stuff -->
