@@ -12,7 +12,7 @@
     <!-- Page title stuff-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="/images/logo.jpg">
-    <title>Notícias</title>
+    <title>Contactos</title>
 
 
     <!-- Header stuff -->
@@ -43,39 +43,6 @@
 <!-- Page body -->
 
 <body>
-    <!-- Script for the nav menu. If you click on it, it fixes the dropdown. If you click anywhere else, it closes. -->
-    <script>
-        /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
-        let closeDropdown = function () {
-
-        }
-        function myFunction1(num) {
-            closeDropdown();
-            let el = document.getElementById("myDropdown" + num);
-            if (el) {
-                el.classList.toggle("show");
-                closeDropdown = function () {
-                    el.classList.remove("show");
-                }
-            } else {
-                closeDropdown = function () {
-                }
-            }
-        }
-
-        window.onclick = function (event) {
-            if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-    </script>
     <!-- Menu navigation stuff -->
     <div class="topnav" id="myTopnav">
         <!-- home page -->
@@ -132,31 +99,103 @@
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
 
-
     <div class="main">
-        <!-- 2ª notícia (utilizado sistema de stacks para as notícias)-->
+        <div class="align_center">
+            <h1>Contacte-nos!</h1>
 
-        <!-- 1ª notícia (utilizado sistema de stacks para as notícias)-->
-        <div class="align_justify">
-            <p>
-                <b style="color: #af4c4c;">19/11/2020: </b>
-                O Estágio encontra-se suspenso, sem data de realização prevista.
-                Será alertado neste website e nas nossas redes sociais assim que existir mais informações.
-                Mantenha-se conectado connosco para mais informações acerca do estágio.
-            </p>
+
+            <!-- Contact form -->
+            <style>
+                /* style for small input field */
+                input[type=text] {
+                    width: 100%;
+                    padding: 12px 20px;
+                    margin: 8px 0;
+                    box-sizing: border-box;
+                    border: 3px solid #ccc;
+                    -webkit-transition: 0.5s;
+                    transition: 0.5s;
+                    outline: none;
+                }
+
+                input[type=text]:focus {
+                    border: 3px solid #af4c4c;
+                }
+
+                /* style for message field */
+                textarea {
+                    width: 100%;
+                    padding: 12px 20px;
+                    margin: 8px 0;
+                    box-sizing: border-box;
+                    border: 3px solid #ccc;
+                    -webkit-transition: 0.5s;
+                    transition: 0.5s;
+                    outline: none;
+                }
+
+                textarea[type=text]:focus {
+                    border: 3px solid #af4c4c;
+                }
+
+                /* style for sending button */
+                .button3 {
+                    background-color: #af4c4c;
+                    border-radius: 12px;
+                    color: white;
+                }
+
+                .button3:hover {
+                    background-color: rgb(75, 75, 75);
+                    color: white;
+                    border: 2px solid rgb(75, 75, 75);
+                }
+            </style>
+
+            <div class="container">
+                <form target="_blank" action="https://formsubmit.co/127d493e273b1ad939e9359ff94eba41" method="POST">
+                    <div class="form-group">
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" name="name" class="form-control" placeholder="O seu nome" required>
+                            </div>
+                            <div class="col">
+                                <input type="text" name="email" class="form-control" placeholder="O seu email" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea type=text placeholder="A sua mensagem" class="form-control" name="message" rows="10"
+                            required></textarea>
+                    </div>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <button type="submit" class="button button3">
+                        Enviar
+                    </button>
+                </form>
+            </div>
+
+            <!-- end of form -->
         </div>
     </div>
 
+
     <script>
         function myFunction() {
-            var x = document.getElementById(" myTopnav"); if (x.className === "topnav") {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
                 x.className += " responsive";
-            } else { x.className = "topnav"; }
-        } </script>
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 
     <div class="footer">
         <p>Seminário cancelado. Mantenha-se seguro!</p>
     </div>
+
 </body>
 
 </html>
