@@ -42,13 +42,29 @@
 <!-- Page body -->
 
 <body>
+    <script>
+        /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+        function myFunction1(num) {
+            document.getElementById("myDropdown" + num).classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
     <!-- Menu navigation stuff -->
     <div class="topnav" id="myTopnav">
         <!-- home page -->
         <a href="/index" class="active">Página Principal</a>
         <!-- about us -->
-        <div class="dropdown">
-            <button class="dropbtn">Sobre Nós
+        <div class="dropdown" id="myDropdown1">
+            <button class="dropbtn" onclick="myFunction1(1)">Sobre Nós
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
@@ -57,8 +73,8 @@
             </div>
         </div>
         <!-- about the city -->
-        <div class="dropdown">
-            <button class="dropbtn">Braga
+        <div class="dropdown" id="myDropdown2">
+            <button class="dropbtn" onclick="myFunction1(2)">Braga
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
@@ -70,8 +86,8 @@
             </div>
         </div>
         <!-- Seminar -->
-        <div class="dropdown">
-            <button class="dropbtn">Seminário Internacional
+        <div class="dropdown" id="myDropdown3">
+            <button class="dropbtn" onclick="myFunction1(3)">Seminário Internacional
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
@@ -84,8 +100,8 @@
         <!-- news -->
         <a href="/src/pt/noticias">Notícias</a>
         <!-- images from previous events -->
-        <div class="dropdown">
-            <button class=" dropbtn">Imagens
+        <div class="dropdown" id="myDropdown4">
+            <button class=" dropbtn" onclick="myFunction1(4)">Imagens
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
