@@ -44,14 +44,20 @@
 <body>
     <script>
         /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
-        function myFunction1(num) {
-            document.getElementById("myDropdown" + num).classList.toggle("show");
-        }
+        let closeDropdown = function () {
 
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function (e) {
-            if (!e.target.matches('.dropbtn')) {
-                var myDropdown = document.getElementById("myDropdown");
+        }
+        function myFunction1(num) {
+            closeDropdown();
+            let el = document.getElementById("myDropdown" + num);
+            if (el) {
+                el.classList.toggle("show");
+                closeDropdown = function () {
+                    el.classList.remove("show");
+                }
+            } else {
+                closeDropdown = function () {
+                }
             }
         }
     </script>
@@ -60,21 +66,21 @@
         <!-- home page -->
         <a href="/index" class="active">Página Principal</a>
         <!-- about us -->
-        <div class="dropdown" id="myDropdown1">
+        <div class="dropdown">
             <button class="dropbtn" onclick="myFunction1(1)">Sobre Nós
                 <i class="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
+            <div class="dropdown-content" id="myDropdown1">
                 <a href="/src/pt/clube">O Nosso Clube</a>
                 <a href="/src/pt/imprensa">Imprensa</a>
             </div>
         </div>
         <!-- about the city -->
-        <div class="dropdown" id="myDropdown2">
+        <div class="dropdown">
             <button class="dropbtn" onclick="myFunction1(2)">Braga
                 <i class="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
+            <div class="dropdown-content" id="myDropdown2">
                 <a href="/src/pt/braga-cidade">Cidade</a>
                 <a href="/src/pt/braga-transportes">Transportes</a>
                 <a href="/src/pt/braga-alojamento">Alojamento</a>
@@ -83,11 +89,11 @@
             </div>
         </div>
         <!-- Seminar -->
-        <div class="dropdown" id="myDropdown3">
+        <div class="dropdown">
             <button class="dropbtn" onclick="myFunction1(3)">Seminário Internacional
                 <i class="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
+            <div class="dropdown-content" id="myDropdown3">
                 <a href="/src/pt/abertel">André Bertel</a>
                 <a href="/src/pt/info">Informações Gerais</a>
                 <a href="/src/pt/inscricao">Inscrição</a>
@@ -97,11 +103,11 @@
         <!-- news -->
         <a href="/src/pt/noticias">Notícias</a>
         <!-- images from previous events -->
-        <div class="dropdown" id="myDropdown4">
+        <div class="dropdown">
             <button class=" dropbtn" onclick="myFunction1(4)">Imagens
                 <i class="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
+            <div class="dropdown-content" id="myDropdown4">
                 <a href="/src/pt/imagens2019">Seminário 2019</a>
             </div>
         </div>
