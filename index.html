@@ -42,13 +42,18 @@
 <!-- Page body -->
 
 <body>
+    <script>
+        function myFunction(num) {
+            document.getElementById("myDropdown" + num).classList.toggle("show");
+        }
+    </script>
     <!-- Menu navigation stuff -->
     <div class="topnav" id="myTopnav">
         <!-- home page -->
         <a href="/index" class="active">Página Principal</a>
         <!-- about us -->
-        <div class="dropdown" id="dropAbout">
-            <button class="dropbtn" id="btnAbout">Sobre Nós
+        <div class="dropdown" id="dropdown1" onclick="myFunction(1)">
+            <button class="dropbtn">Sobre Nós
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
@@ -57,8 +62,8 @@
             </div>
         </div>
         <!-- about the city -->
-        <div class="dropdown" id="dropBraga">
-            <button class="dropbtn" id="btnbraga">Braga
+        <div class="dropdown" id="dropdown2" onclick="myFunction(2)">
+            <button class="dropbtn">Braga
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
@@ -70,8 +75,8 @@
             </div>
         </div>
         <!-- Seminar -->
-        <div class="dropdown" id="dropAbertel">
-            <button class="dropbtn" id="btnAbertel">Seminário Internacional
+        <div class="dropdown" id="dropdown3" onclick="myFunction(3)">
+            <button class="dropbtn">Seminário Internacional
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
@@ -84,8 +89,8 @@
         <!-- news -->
         <a href="/src/pt/noticias">Notícias</a>
         <!-- images from previous events -->
-        <div class="dropdown" id="dropImagens">
-            <button class="dropbtn" id="btnimagens">Imagens
+        <div class="dropdown" id="dropdown4" onclick="myFunction(4)">
+            <button class="dropbtn">Imagens
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
