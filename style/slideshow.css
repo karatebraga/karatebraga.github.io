@@ -4,9 +4,9 @@
 /* Slideshow container */
 .slideshow-container {
     position: relative;
-	overflow: hidden;
-	width: inherit;
-	height: 400px;
+	  overflow: hidden;
+	  width: inherit;
+	  height: 400px;
     position: relative;
     margin: auto;
 }
