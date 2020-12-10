@@ -147,6 +147,7 @@
             <br>
             <img style="width: 100%;" src="/images/horarios.png">
             <br>
+            <br>
             <hr>
             <!-- graduados -->
             <br>
@@ -160,6 +161,7 @@
                     style="height: 50px;" src="/images/youtube-icon.png" alt="Youtube Channel"></a>
             <hr>
 
+            <br>
             <br>
             <!-- dojo -->
             <img style="width: 100%;" src="/images/Dojo.png">
@@ -180,12 +182,14 @@
                 </a>
             </div>
             <br>
+            <br>
             <hr>
             <br>
             <!-- panfleto -->
             <img style="width: 100%;" src="/images/panfleto1.png">
             <br>
             <img style="width: 100%;" src="/images/panfleto2.png">
+            <br>
             <br>
             <hr>
             <br>
@@ -302,6 +306,46 @@
                 <span class="dot"></span>
             </div>
             <style>
+                /* Slideshow container */
+                .slideshow-container {
+                    position: relative;
+                    overflow: hidden;
+                    width: 100%;
+                    position: relative;
+                    margin: auto;
+                }
+
+                .slideshow-container>div {
+                    position: absolute;
+                    max-width: 100%;
+                    width: 100%;
+                    max-height: 100%;
+                }
+
+                /* The dots/bullets/indicators */
+                .dot {
+                    height: 15px;
+                    width: 15px;
+                    margin: 0 2px;
+                    background-color: #bbb;
+                    border-radius: 50%;
+                    display: inline-block;
+                    transition: background-color 0.6s ease;
+                }
+
+                .active {
+                    background-color: #af4c4d;
+                    color: white;
+                }
+
+                /* Fading animation */
+                .fade {
+                    -webkit-animation-name: fade;
+                    -webkit-animation-duration: 1.5s;
+                    animation-name: fade;
+                    animation-duration: 1.5s;
+                }
+
                 @-webkit-keyframes fade {
                     from {
                         opacity: .4
@@ -319,6 +363,13 @@
 
                     to {
                         opacity: 1
+                    }
+                }
+
+                /* On smaller screens, decrease text size */
+                @media only screen and (max-width: 300px) {
+                    .text {
+                        font-size: 11px
                     }
                 }
             </style>
