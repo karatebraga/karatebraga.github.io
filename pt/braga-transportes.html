@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="/style/style.css">
+<link rel="stylesheet" href="/style/footer.css">
+<link rel="stylesheet" href="/style/header.css">
+<link rel="stylesheet" href="/style/main.css">
+<link rel="stylesheet" href="/style/navmenu.css">
+
+<!-- Page head -->
+
+<head>
+    <!-- Page title stuff-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/logo.jpg">
+    <meta property="og:title" content="Karate Braga" />
+    <meta property="og:description"
+        content="O nosso clube nasceu em Janeiro de 2001. Descubra mais sobre nós, venha visitar-nos!" />
+    <meta property="og:image"
+        content="https://github.com/karatebraga/karatebraga.github.io/blob/main/images/logo2.png" />
+    <title>Transportes em Braga | Karate Braga</title>
+
+
+    <!-- Header stuff -->
+    <div class="header">
+        <center>
+            <!-- Bandeira portuguesa -->
+            <a href="/index"><img style="width:50px;" src="/images/portugal.png" alt="Portugal"></a>
+            <!-- Bandeira espanhola -->
+            <a href="/es/index"><img style="width:50px;" src="/images/espanha.png" alt="Español"></a>
+            <!-- Bandeira francesa -->
+            <a href="/fr/index"><img style="width:50px;" src="/images/franca.png" alt="Français"></a>
+            <!-- Bandeira inglesa -->
+            <a href="/en/index"><img style="width:50px;" src="/images/ingles.png" alt="English"></a>
+        </center>
+
+        <!-- Botão de aviso e informações-->
+        <a href="/pt/contactos">
+            <button class="button button2">
+                Seminário Cancelado!
+            </button>
+        </a>
+        <p style="font-size:60%;">Devido às circunstâncias atuais, o seminário encontra-se cancelado.</p>
+        <p style="font-size:60%;"><u>Brevemente mais informações.</u></p>
+        <p style="font-size:60%;">Siga-nos no facebook para receber todas as informações.</p>
+    </div>
+</head>
+
+<!-- Page body -->
+
+<body>
+    <!-- Script for the nav menu. If you click on it, it fixes the dropdown. If you click anywhere else, it closes. -->
+    <script>
+        /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+        let closeDropdown = function () {
+
+        }
+        function myFunction1(num) {
+            closeDropdown();
+            let el = document.getElementById("myDropdown" + num);
+            if (el) {
+                el.classList.toggle("show");
+                closeDropdown = function () {
+                    el.classList.remove("show");
+                }
+            } else {
+                closeDropdown = function () {
+                }
+            }
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Menu navigation stuff -->
+    <div class="topnav" id="myTopnav">
+        <!-- home page -->
+        <a href="/index" class="active">Página Principal</a>
+        <!-- about us -->
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction1(1)">Sobre Nós
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown1">
+                <a href="/pt/clube">O Nosso Clube</a>
+                <a href="/pt/imprensa">Imprensa</a>
+            </div>
+        </div>
+        <!-- about the city -->
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction1(2)">Braga
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown2">
+                <a href="/pt/braga-cidade">Cidade</a>
+                <a href="/pt/braga-transportes">Transportes</a>
+                <a href="/pt/braga-alojamento">Alojamento</a>
+                <a href="/pt/braga-onde_comer">Onde Comer</a>
+                <a href="/pt/braga-turismo">Turismo</a>
+            </div>
+        </div>
+        <!-- Seminar -->
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction1(3)">Seminário Internacional
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown3">
+                <a href="/pt/seminário_abertel.html">Sumário</a>
+                <a href="/pt/abertel">André Bertel</a>
+                <a href="/pt/info">Informações Gerais</a>
+                <a href="/pt/inscricao">Inscrição</a>
+                <a href="/pt/apoios">Apoios</a>
+            </div>
+        </div>
+        <!-- news: if on separate -->
+        <!-- <a href="/pt/noticias">Notícias</a> -->
+        <!-- images from previous events -->
+        <div class="dropdown">
+            <button class=" dropbtn" onclick="myFunction1(4)">Imagens
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown4">
+                <a href="/pt/imagens2019">Seminário 2019</a>
+            </div>
+        </div>
+        <!-- contact us -->
+        <a href="/pt/contactos">Contactos</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+
+    <style>
+        /* Container holding the image and the text */
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        /* Centered text */
+        .centered {
+            color: black;
+            position: absolute;
+            font-size: 15px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+    <div class="main">
+        <div class="align_center">
+            <!-- text -->
+            <h2>Chegar a Braga é fácil! Para o ajudar, oferecemos-lhe aqui algumas alternativas!</h2>
+            <br>
+            <!-- Aeroporto -->
+            <div class="container">
+                <a href="https://www.aeroportoporto.pt/pt/opo/home" target="_blank"></a><img
+                    style="width:75%; height: 200px; opacity: 0.4; min-width: 75%;" src="/images/aeroportoPorto.jpg"
+                    alt="Aeroporto Sá Carneiro"></a>
+                <div class="centered"><b>Aeroporto Francisco Sá Carneiro – Porto Portugal</b><br><i>Aeroporto Porto
+                        a 50Km de Braga</i></div>
+            </div>
+            <br>
+            <!-- Get bus -->
+            <div class="container">
+                <a href="https://www.getbus.eu/pt/braga-aeroporto-braga" target="_blank"><img
+                        style="width:75%; height: 200px; opacity: 0.4; min-width: 75%;" src="/images/getbus.jpg"
+                        alt="Get Bus"></a>
+                <div class="centered"><b>Get Bus</b><br><i>Autocarro faz a ligação entre o aeroporto do Porto e a
+                        cidade de Braga em 50 minutos</i></div>
+            </div>
+            <br>
+            <!-- Aeroporto de vigo -->
+            <div class="container">
+                <a href="http://www.aena.es/en/vigo-airport/index.html" target="_blank"><img
+                        style="width:75%; height: 200px; opacity: 0.4; min-width: 75%;" src="/images/aeroportoVigo.jpg"
+                        alt="Aeroporto Vigo"></a>
+                <div class="centered"><b>Aeroporto de Vigo Espanha</b><br><i>Aeroporto Vigo a 100Km de Braga</i></div>
+            </div>
+            <br>
+            <!-- Check my bus -->
+            <div class="container">
+                <a href="https://www.checkmybus.pt/braga/vigo-aeroporto" target="_blank"><img
+                        style="width:75%; height: 200px; opacity: 0.4; min-width: 75%;" src="/images/checkmybus.jpg"
+                        alt="Check My Bus"></a>
+                <div class="centered"><b>CheckMyBus</b><br><i>Autocarro faz a ligação entre o aeroporto de Vigo e a
+                        cidade de Braga em 1h25 minutos</i></div>
+            </div>
+            <br>
+            <!-- Aeródromo Municipal de Braga -->
+            <div class="container">
+                <a href="https://www.facebook.com/AeroClubBraga" target="_blank"><img
+                        style="width:75%; height: 150px; opacity: 0.4; min-width: 75%;" src="/images/aerodromoBraga.jpg"
+                        alt="Aérodromo Municipal de Braga"></a>
+                <div class="centered"><b>Aeródromo Municipal de Braga</b></div>
+            </div>
+            <br>
+            <!-- Barco - Porto de Leixões -->
+            <div class="container">
+                <a href="http://www.apdl.pt/header" target="_blank"><img
+                        style="width:75%; height: 150px; opacity: 0.4; min-width: 75%;" src="/images/portoleixoes.jpg"
+                        alt="Porto de Leixões"></a>
+                <div class="centered"><b>Barco</b><br><i>Porto de Leixões</i></div>
+            </div>
+            <br>
+            <!-- Estação de Comboios Braga -->
+            <div class="container">
+                <a href="https://www.cp.pt/passageiros/pt/consultar-horarios/estacoes/braga" target="_blank"><img
+                        style="width:75%; height: 150px; opacity: 0.4; min-width: 75%;" src="/images/estacaobraga.jpg"
+                        alt="Estação de Caminhos Ferroviários de Braga"></a>
+                <div class="centered"><b>Estação de Comboios Braga</b></div>
+            </div>
+            <br>
+            <!-- Central de Camionagem de Braga -->
+            <div class="container">
+                <a href="https://www.transdev.pt/" target="_blank"><img
+                        style="width:75%; height: 150px; opacity: 0.4; min-width: 75%;" src="/images/centralbraga.jpg"
+                        alt="Central de Camionagem de Braga"></a>
+                <div class="centered"><b>Central de Camionagem de Braga</b></div>
+            </div>
+            <br>
+            <!-- Autocarro para Braga -->
+            <div class="container">
+                <img style="width:75%; height: 200px; opacity: 0.4; min-width: 75%;" src="/images/autocarro.jpg"
+                    alt="Autocarro para Braga">
+                <div class="centered"><b>Autocarro para Braga</b><br><br>
+                    <a href="https://getbybus.com/pt/" target="_blank"><button class="newbutton button2">
+                            GetByBus
+                        </button></a>
+                    <a href="https://www.omio.pt/autocarros/braga" target="_blank"><button class="newbutton button2">
+                            Omio
+                        </button></a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- Alugar Automóvel em Braga -->
+        <div class="container">
+            <img style="width:75%; height: 220px; opacity: 0.4; min-width: 75%;" src="/images/alugarcarro.jpg"
+                alt="Alugar um automóvel em Braga">
+            <div class="centered"><b>Alugar Automóvel em Braga</b><br><br>
+                <a href="https://www.avis.com.pt/" target="_blank"><button class="newbutton button2">
+                        Avis
+                    </button></a>
+                <a href="https://www.europcar.pt/" target="_blank"><button class="newbutton button2">
+                        Europcar
+                    </button></a>
+                <a href="https://auto-jardim.com/" target="_blank"><button class="newbutton button2">
+                        Auto-Jardim
+                    </button></a>
+                <a href="https://www.hertz.com.pt/rentacar/reservation/" target="_blank"><button
+                        class="newbutton button2">
+                        Hertz
+                    </button></a>
+                <a href="http://www.onerent.pt/" target="_blank"><button class="newbutton button2">
+                        Onerent
+                    </button></a>
+            </div>
+        </div>
+        <br>
+        <!-- TUB - Transportes Urbanos de Braga -->
+        <div class="container">
+            <a href="https://tub.pt/" target="_blank"><img
+                    style="width:75%; height: 200px; opacity: 0.4; min-width: 75%;" src="/images/tub.jpg" alt="TUB"></a>
+            <div class="centered"><b>TUB - Transportes Urbanos de Braga</b><br><i>A empresa TUB - presta serviço de
+                    transporte urbano de passageiros no concelho de Braga</i></div>
+        </div>
+        <br>
+        <!-- TAXI em Braga -->
+        <div class="container">
+            <img style="width:75%; height: 150px; opacity: 0.4; min-width: 75%;" src="/images/taxis.jpg"
+                alt="Táxis em Braga">
+            <div class="centered"><b>TAXI em Braga</b><br><br>
+                <a href="http://www.taxisbraga.pt/" target="_blank"><button class="newbutton button2">
+                        Taxis Andique
+                    </button></a>
+                <a href="http://www.bragataxis.pt/" target="_blank"><button class="newbutton button2">
+                        BragaTaxis
+                    </button></a>
+                <a href="http://www.taxi24.pt/" target="_blank"><button class="newbutton button2">
+                        Taxi24
+                    </button></a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <div class="footer">
+        <p>Seminário cancelado. Mantenha-se seguro!</p>
+    </div>
+
+</body>
+
+</html>

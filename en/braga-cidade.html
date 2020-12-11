@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="/style/style.css">
+<link rel="stylesheet" href="/style/footer.css">
+<link rel="stylesheet" href="/style/header.css">
+<link rel="stylesheet" href="/style/main.css">
+<link rel="stylesheet" href="/style/navmenu.css">
+
+<!-- Page head -->
+
+<head>
+    <!-- Page title stuff-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/logo.jpg">
+    <meta property="og:title" content="Karate Braga" />
+    <meta property="og:description"
+        content="O nosso clube nasceu em Janeiro de 2001. Descubra mais sobre nós, venha visitar-nos!" />
+    <meta property="og:image"
+        content="https://github.com/karatebraga/karatebraga.github.io/blob/main/images/logo2.png" />
+    <title>Cidade de Braga | Karate Braga</title>
+
+
+    <!-- Header stuff -->
+    <div class="header">
+        <center>
+            <!-- Bandeira portuguesa -->
+            <a href="/index"><img style="width:50px;" src="/images/portugal.png" alt="Portugal"></a>
+            <!-- Bandeira espanhola -->
+            <a href="/es/index"><img style="width:50px;" src="/images/espanha.png" alt="Español"></a>
+            <!-- Bandeira francesa -->
+            <a href="/fr/index"><img style="width:50px;" src="/images/franca.png" alt="Français"></a>
+            <!-- Bandeira inglesa -->
+            <a href="/en/index"><img style="width:50px;" src="/images/ingles.png" alt="English"></a>
+        </center>
+
+        <!-- Botão de aviso e informações-->
+        <a href="/pt/contactos">
+            <button class="button button2">
+                Seminário Cancelado!
+            </button>
+        </a>
+        <p style="font-size:60%;">Devido às circunstâncias atuais, o seminário encontra-se cancelado.</p>
+        <p style="font-size:60%;"><u>Brevemente mais informações.</u></p>
+        <p style="font-size:60%;">Siga-nos no facebook para receber todas as informações.</p>
+    </div>
+</head>
+
+<!-- Page body -->
+
+<body>
+    <!-- Script for the nav menu. If you click on it, it fixes the dropdown. If you click anywhere else, it closes. -->
+    <script>
+        /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+        let closeDropdown = function () {
+
+        }
+        function myFunction1(num) {
+            closeDropdown();
+            let el = document.getElementById("myDropdown" + num);
+            if (el) {
+                el.classList.toggle("show");
+                closeDropdown = function () {
+                    el.classList.remove("show");
+                }
+            } else {
+                closeDropdown = function () {
+                }
+            }
+        }
+
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Menu navigation stuff -->
+    <div class="topnav" id="myTopnav">
+        <!-- home page -->
+        <a href="/index" class="active">Página Principal</a>
+        <!-- about us -->
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction1(1)">Sobre Nós
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown1">
+                <a href="/pt/clube">O Nosso Clube</a>
+                <a href="/pt/imprensa">Imprensa</a>
+            </div>
+        </div>
+        <!-- about the city -->
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction1(2)">Braga
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown2">
+                <a href="/pt/braga-cidade">Cidade</a>
+                <a href="/pt/braga-transportes">Transportes</a>
+                <a href="/pt/braga-alojamento">Alojamento</a>
+                <a href="/pt/braga-onde_comer">Onde Comer</a>
+                <a href="/pt/braga-turismo">Turismo</a>
+            </div>
+        </div>
+        <!-- Seminar -->
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction1(3)">Seminário Internacional
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown3">
+                <a href="/pt/seminário_abertel.html">Sumário</a>
+                <a href="/pt/abertel">André Bertel</a>
+                <a href="/pt/info">Informações Gerais</a>
+                <a href="/pt/inscricao">Inscrição</a>
+                <a href="/pt/apoios">Apoios</a>
+            </div>
+        </div>
+        <!-- news: if on separate -->
+        <!-- <a href="/pt/noticias">Notícias</a> -->
+        <!-- images from previous events -->
+        <div class="dropdown">
+            <button class=" dropbtn" onclick="myFunction1(4)">Imagens
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown4">
+                <a href="/pt/imagens2019">Seminário 2019</a>
+            </div>
+        </div>
+        <!-- contact us -->
+        <a href="/pt/contactos">Contactos</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+
+    <div class="main">
+        <div class="align_center">
+            <!-- intro -->
+            <h1>Seja Bem Vindo à cidade de Braga!</h1>
+            <br>
+
+            <!-- iframe youtube -->
+            <div style="width: 100%" class="center">
+                <iframe width="100%" height="350" src="https://www.youtube.com/embed/Jf2bX9fuUR8">
+                </iframe>
+            </div>
+
+            <!-- text for iframe -->
+            <h6>Vídeo promocional de Braga produzido pela CIM Cávado que inclui imagens dos principais monumentos e
+                eventos da Cidade.</h6>
+        </div>
+
+        <!-- justified text -->
+        <div class="align_justify">
+            <p>Braga é uma cidade de enorme beleza e riqueza patrimonial, que alia a tradição à inovação, a memória
+                à
+                juventude, a criatividade ao conservadorismo.<br>
+                <br>
+                Com mais de 2000 anos de uma história riquíssima, possui um dos Sacro-Montes mais antigos de toda a
+                Europa e
+                porta-estandarte da região Minhota, o Bom Jesus. É em Braga que se encontra a mais antiga Catedral
+                de
+                Portugal e a Casa-Mãe dos beneditinos, o Mosteiro de Tibães.<br>
+                <br>
+                Braga apresenta lugares que, pela sua intrínseca devoção e beleza, se impõem como marcos de
+                obrigatória
+                referência e visita. O Santuário do Sameiro, o Bom Jesus e a Falperra, assentando numa apelativa
+                base
+                religiosa, rodeiam-se de extasiantes espaços verdes e paradisíacas paisagens.<br>
+                <br>
+                O legado romano é outro dos fatores atrativos de Braga, frequentemente apelidada de ‘Roma
+                Portuguesa’,
+                fruto
+                da sua origem na cidade romana de Bracara Augusta. Conhecida pelas suas distintas igrejas,
+                esplêndidas
+                casas
+                do século XVIII, jardins, parques e espaços de lazer. A longa história de Braga é visível em todo o
+                esplendor dos seus monumentos, museus e igrejas.<br>
+                <br>
+                Visitar Braga é fazer uma viagem no tempo dentro da modernidade. Cidade antiga e de religiosidade
+                tradicional - sempre imponente na sua riqueza e majestade - vive de mãos dadas com o
+                empreendedorismo e
+                espírito jovem em áreas tão vitais como a cultura, o comércio, a gastronomia, a indústria e os
+                serviços.<br>
+                <br>
+                Desfrute de Braga! Daqui parta à descoberta do Gerês, do Norte de Portugal e da Galiza, mas volte...
+                Volte
+                porque aqui está perto de tudo.<br>
+                <br>
+                Em Braga, sinta-se bem, nesta terra tão acolhedora, próxima, distinta e completa!
+                Esperamos vê-lo por aqui e a falar sobre nós!<br>
+                <br>
+                Fonte: <a href="https://www.cm-braga.pt/pt/0101/conhecer/seja-bem-vindo-a-braga" target="_blank">Braga -
+                    Cidade
+                    Autêntica</a><br>
+            </p>
+        </div>
+
+        <!-- buttons -->
+        <div class="align_center">
+            <div style="display: inline-block;">
+                <a href="https://www.cm-braga.pt/pt/0801/conhecer/braga-em-fotos" target="_blank">
+                    <button class="button button2">
+                        Fotos de Braga
+                    </button>
+                </a>
+            </div>
+
+            <div style="display: inline-block;">
+                <a href="https://www.cm-braga.pt/pt/1701/conhecer/braga-em-videos" target="_blank">
+                    <button class=" button button2">
+                        Vídeos de Braga
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <!-- sub title for next justified text-->
+        <div class="align_center">
+            <h2><i>Acessibilidades</i></h2>
+        </div>
+
+        <!-- justified text-->
+        <div class="align_justify">
+            <p>
+                <i><u>Como chegar (ex. automóvel, avião, barco, autocarro, comboio).</u></i><br>
+                <br>
+                Graças à sua excelente localização geográfica, Braga é facilmente acessível por carro, comboio, táxi
+                ou
+                autocarro.<br>
+                <br>
+                A cidade é servida por 5 autoestradas: pelo Norte (A3), Sul (A3 e A1 de Lisboa), Este (A11 e A7) e
+                Oeste
+                (A28).<br>
+                <br>
+                O transporte ferroviário liga Braga a vários pontos do país através dos Serviços da CP (Alfa
+                Pendular,
+                Intercidades, Comboios urbanos do Porto).
+                Em termos de transportes rodoviários, a Central de Camionagem de Braga acolhe as empresas Arriva,
+                Citi
+                express, EBA, Get Bus, Internorte, Rede Expressos, Renex, Rodonorte, Salvador Alves e Filhos lda,
+                Transdev, assegurando a conexão entre vários destinos regionais, nacionais e internacionais.<br>
+                <br>
+                O Aeroporto Francisco Sá Carneiro é o principal eixo na região noroeste da Península Ibérica a
+                receber
+                as companhias aéreas mais relevantes e voos de baixo custo (a 30 minutos de Braga por autoestrada,
+                cerca
+                de 50 km). O aeroporto é facilmente acessível pela autoestrada A3, através do metro do Porto e dos
+                comboios da CP, ou ainda, através do serviço de shuttle fornecido pela Get Bus.<br>
+                <br>
+                O aeroporto de Vigo situa-se a cerca de 100 km, existindo viagens de autocarro que ligam diretamente
+                estas duas cidades diariamente.<br>
+                <br>
+                O Porto de Leixões é a maior infraestrutura portuária do Norte de Portugal e uma das mais
+                importantes do
+                país (a 45 minutos de Braga por autoestrada).<br>
+                <br>
+                A nível de transportes públicos, o concelho é servido pelos Transportes Urbanos de Braga (TUB).<br>
+                <br>
+                Para mais informação acerca dos transportes, clique <a href="/pt/braga-transportes.html">aqui</a>.
+                <br>
+
+            </p>
+        </div>
+
+        <br>
+        <br>
+        <!-- maps -->
+        <div style="width: 100%" class="align_center">
+            <iframe width="100%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                src="https://maps.google.com/maps?width=75%25&amp;height=350&amp;hl=en&amp;q=Braga+(Cidade%20de%20Braga)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+            </iframe>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+    <div class="footer">
+        <p>Seminário cancelado. Mantenha-se seguro!</p>
+    </div>
+
+</body>
+
+</html>

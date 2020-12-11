@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="/style/header.css">
 <link rel="stylesheet" href="/style/main.css">
 <link rel="stylesheet" href="/style/navmenu.css">
+<link rel="stylesheet" href="/style/slideshow.css">
 
 <!-- Page head -->
 
@@ -17,13 +18,13 @@
         content="O nosso clube nasceu em Janeiro de 2001. Descubra mais sobre nós, venha visitar-nos!" />
     <meta property="og:image"
         content="https://github.com/karatebraga/karatebraga.github.io/blob/main/images/logo2.png" />
-    <title>Página Principal | Karate Braga</title>
+    <title>André Bertel | Karate Braga</title>
 
     <!-- Header stuff -->
     <div class="header">
         <center>
             <!-- Bandeira portuguesa -->
-            <a href="index"><img style="width:50px;" src="/images/portugal.png" alt="Portugal"></a>
+            <a href="/index"><img style="width:50px;" src="/images/portugal.png" alt="Portugal"></a>
             <!-- Bandeira espanhola -->
             <a href="/es/index"><img style="width:50px;" src="/images/espanha.png" alt="Español"></a>
             <!-- Bandeira francesa -->
@@ -136,146 +137,149 @@
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </div>
 
-    <!-- Main Page stuff : Blog layout -->
-    <style>
-        /* Create two unequal columns that floats next to each other */
-        /* Left column */
-        .leftcolumn {
-            float: left;
-            width: 75%;
-        }
 
-        /* Right column */
-        .rightcolumn {
-            float: left;
-            width: 20%;
-            padding-left: 5%;
-        }
 
-        /* Fake image */
-        .fakeimg {
-            background-color: #af4c4c;
-            border: 2px solid rgb(75, 75, 75);
-            width: 100%;
-        }
-
-        /* Add a card effect for articles */
-        .card {
-            background-color: white;
-            margin-top: 30px;
-        }
-
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        /* Responsive layout - when the screen is less than 800px wide, make the
-         two columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 800px) {
-
-            .leftcolumn,
-            .rightcolumn {
-                width: 100%;
-                padding: 0;
-            }
-        }
-    </style>
-    <!-- Html stuff -->
     <div class="main">
-        <div class="row">
-            <!-- Left column -->
-            <div class="leftcolumn">
-                <!-- new card -->
-                <div class="card" id="Seminário_Cancelado">
-                    <div class="align_center">
-                        <h2>Seminário Cancelado</h2>
-                        <h5><i>Dezembro 1, 2020</i></h5>
-                    </div>
-                    <!-- image -->
-                    <div class="align_center">
-                        <img style="width: 75%;" src="/images/cartaz_canceled.png" alt="Cartaz">
-                    </div>
-                    <!-- text -->
-                    <div class="align_justify">
-                        <p>Dadas as circunstâncias atuais, o
-                            <b><i>Seminário Internacional Budo Karate</i>
-                                encontra-se
-                                suspenso</b>, sem data prevista de realização.
-                            Será alertado neste website e nas nossas redes sociais assim que existir mais informações.
-                            Mantenha-se conectado connosco para mais informações acerca do estágio.</p>
-                    </div>
+
+        <!-- Título na página -->
+        <div class="align_center">
+            <h2>Sensei</h2>
+            <h1>André Bertel</h1>
+            <!-- Botão do blog -->
+            <a href='https://andrebertel.blogspot.com/' target='_blank'><input type='button'
+                    style='padding-left:10px;padding-top:10px;padding-right:10px;padding-bottom:10px;margin-left:10px;margin-top:10px;margin-right:10px;margin-bottom:10px;background-color:#ffa500;color:#000000;border-left-width:0px;border-top-width:0px;border-right-width:0px;border-bottom-width:0px;border-color:#d5d5d5;border-radius:100px;cursor:pointer'
+                    value='andrebertel.blogspot.com' onMouseOver=this.style.backgroundColor='#ffc800'
+                    ;this.style.color='#320000' ;this.style.borderColor='#d5d5d5'
+                    onMouseOut=this.style.backgroundColor='#ffa500' ;this.style.color='#000000'
+                    ;this.style.borderColor='#d5d5d5' /></a><br>
+
+            <!-- Botão do canal de youtube -->
+            <script src="https://apis.google.com/js/platform.js"></script>
+
+            <div class="g-ytsubscribe" data-channel="AndreBertel" data-layout="full" data-count="default"></div>
+            <hr>
+
+            <!-- Inserir fotos num slideshow -->
+            <div class="slideshow-container">
+                <!-- Not fitting
+                <div class="mySlides fade">
+                    <img src="/images/abertel0.jpg">
                 </div>
-                <hr>
-                <!-- new card -->
-                <div class="card" id="Novo_Website">
-                    <div class="align_center">
-                        <h2>Novo Website</h2>
-                        <h5><i>Dezembro 1, 2020</i></h5>
-                    </div>
-                    <!-- image -->
-                    <img style="width: 100%;" src="/images/Seminar_2019/seminar3.jpg" alt="Osu">
-                    <!-- text-->
-                    <div class="align_center">
-                        <p><i>Seja bem-vindo!</i></p>
-                    </div>
-                    <div class="align_justify">
-                        <p>Foram realizadas alterações ao nosso website. Esperemos que goste e aguardamos o seu
-                            feedback! Não se esqueça de nos visitar!</p>
-                    </div>
+                
+
+                <div class="mySlides fade">
+                    <img src="/images/abertel1.jpg">
                 </div>
-                <!-- Giving some space for right column -->
-                <br>
-                <br>
-                <hr>
-                <br>
+                -->
+
+                <div class="mySlides fade">
+                    <img src="/images/abertel2.jpg">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="/images/abertel3.jpg">
+                </div>
+
+                <!-- Not fitting
+                <div class="mySlides fade">
+                    <img src="/images/abertel4.jpg">
+                </div>
+                -->
+
+                <div class="mySlides fade">
+                    <img src="/images/abertel5.jpg">
+                </div>
+
+            </div>
+            <br>
+
+            <!-- Same amount of dot as images -->
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <!-- Images not fitting
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                -->
+
             </div>
 
-            <!-- Right column -->
-            <div class="align_center">
-                <div class="rightcolumn">
-                    <div class="card">
-                        <!-- About us -->
-                        <h2>KARATE BRAGA</h2>
-                        <!-- image -->
-                        <img style="height: 150px;" src="/images/logo.jpg" alt="Karate Braga">
-                        <!-- text -->
-                        <p><i>O nosso clube nasceu em Janeiro de 2001. Descubra mais sobre nós,
-                                venha visitar-nos!
-                            </i></p>
-                    </div>
-                    <div class="card">
-                        <h3>Em destaque</h3>
+            <script>
+                var slideIndex = 0;
+                showSlides();
 
-                        <a href="#Seminário_Cancelado" style="text-decoration: none; color: white;">
-                            <div class="fakeimg">
-                                Seminário Cancelado
-                            </div>
-                        </a>
-                        <br>
-                        <a href="#Novo_Website" style="text-decoration: none; color: white;">
-                            <div class="fakeimg">
-                                Novo Website
-                            </div>
-                        </a>
-                    </div>
-                    <div class=" card">
-                        <h3>Siga-nos</h3>
-                        <a href="https://www.facebook.com/karatebraga" target="_blank"><img style="height: 50px;"
-                                src="/images/facebook-icon.png" alt="facebook"></a><a
-                            href="https://www.youtube.com/channel/UCykJx-S6GuDOA4ysMTuDxMw/featured"
-                            target="_blank"><img style="height: 50px;" src="/images/youtube-icon.png"
-                                alt="Youtube Channel"></a>
-                    </div>
-                </div>
+                function showSlides() {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) { slideIndex = 1 }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                    setTimeout(showSlides, 3000); // Change image every 3 seconds
+                }
+            </script>
+
+            <hr>
+            <!-- Inserir vídeos -->
+            <h5>Portugal 2019 Part 1</h5>
+            <div style="width: 100%" class="center">
+                <iframe width="100%" height="350" src="https://www.youtube.com/embed/4SHeStssz6I">
+                </iframe>
+            </div>
+
+            <h5>Portugal 2019 Part 2</h5>
+            <div style="width: 100%" class="center">
+                <iframe width="100%" height="350" src="https://www.youtube.com/embed/Ha_9g2r1chU">
+                </iframe>
+            </div>
+
+            <h5>Alemanha 2018</h5>
+            <div style="width: 100%" class="center">
+                <iframe width="100%" height="350" src="https://www.youtube.com/embed/DSQd8ApZxeU">
+                </iframe>
+            </div>
+
+            <h5>Nova Zelândia 2017</h5>
+            <div style="width: 100%" class="center">
+                <iframe width="100%" height="350" src="https://www.youtube.com/embed/QuQP80OEVwE">
+                </iframe>
+            </div>
+
+            <h5>Austrália 2016</h5>
+            <div style="width: 100%" class="center">
+                <iframe width="100%" height="350" src="https://www.youtube.com/embed/vYaFA1j6LRU">
+                </iframe>
+            </div>
+
+            <h5>Itália 2016</h5>
+            <div style="width: 100%" class="center">
+                <iframe width="100%" height="350" src="https://www.youtube.com/embed/VMdJqWWA-hg">
+                </iframe>
+            </div>
+
+            <h5>Inglaterra 2016</h5>
+            <div style="width: 100%" class="center">
+                <iframe width="100%" height="350" src="https://www.youtube.com/embed/KxGfIn5ssFM">
+                </iframe>
+            </div>
+
+            <h5>África do Sul 2013</h5>
+            <div style="width: 100%" class="center">
+                <iframe width="100%" height="350" src="https://www.youtube.com/embed/2_tBAf3mC2o">
+                </iframe>
             </div>
         </div>
+
     </div>
-
-
-
 
     <script>
         function myFunction() {
