@@ -1,1 +1,8 @@
-.DS_STORE
+.DS_Store
+
+# Jekyll build output / caches
+_site/
+.jekyll-cache/
+.sass-cache/
+.bundle/
+vendor/

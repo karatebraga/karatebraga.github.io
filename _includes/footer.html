@@ -1,0 +1,9 @@
+<div class="footer">
+  {% if page.footer_text %}
+    <p>{{ page.footer_text }}</p>
+  {% elsif page.lang == "en" %}
+    <p>{{ site.footer_text_en }}</p>
+  {% else %}
+    <p>{{ site.footer_text_pt }}</p>
+  {% endif %}
+</div>

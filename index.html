@@ -1,318 +1,174 @@
-<!DOCTYPE html>
-<html>
-<link rel="stylesheet" href="/style/style.css">
-<link rel="stylesheet" href="/style/footer.css">
-<link rel="stylesheet" href="/style/header.css">
-<link rel="stylesheet" href="/style/main.css">
-<link rel="stylesheet" href="/style/navmenu.css">
+---
+layout: default
+lang: pt
+title: "Página Principal | Karate Braga"
+og_title: "Página Principal | Karate Braga"
+og_description: "O nosso clube nasceu em Janeiro de 2001. Descubra mais sobre nós, venha visitar-nos!"
+nav_active: home
+---
 
-<!-- Page head -->
+<!-- Main Page stuff : Blog layout -->
+<style>
+    /* Create two unequal columns that floats next to each other */
+    /* Left column */
+    .leftcolumn {
+        float: left;
+        width: 75%;
+    }
 
-<head>
-    <!-- Page title stuff-->
-    <meta property="og:title" content="Página Principal | Karate Braga" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description"
-        content="O nosso clube nasceu em Janeiro de 2001. Descubra mais sobre nós, venha visitar-nos!" />
-    <meta property="og:image"
-        content="https://raw.githubusercontent.com/karatebraga/karatebraga.github.io/main/images/logo2.jpg" />
-    <meta property="og:image:type" content="image/jpeg" />
-    <meta property="og:image:width" content="400" />
-    <meta property="og:image:height" content="300" />
-    <meta property="og:image:alt" content="Karate Braga" />
-    <meta property="og:url" content="https://www.karatebraga.com/index" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="/images/logo.jpg">
-    <title>Página Principal | Karate Braga</title>
+    /* Right column */
+    .rightcolumn {
+        float: left;
+        width: 20%;
+        padding-left: 5%;
+    }
 
-    <!-- Header stuff -->
-    <div class="header">
-        <center>
-            <!-- Bandeira portuguesa -->
-            <a href="/index"><img style="width:50px;" src="/images/portugal.png" alt="Portugal"></a>
-            <!-- Bandeira inglesa -->
-            <a href="/en/index"><img style="width:50px;" src="/images/ingles.png" alt="English"></a>
-        </center>
-    </div>
-</head>
+    /* Fake image */
+    .fakeimg {
+        background-color: #af4c4c;
+        border: 2px solid rgb(75, 75, 75);
+        width: 100%;
+    }
 
-<!-- Page body -->
+    /* Add a card effect for articles */
+    .card {
+        background-color: white;
+        margin-top: 30px;
+    }
 
-<body>
-    <!-- Script for the nav menu. If you click on it, it fixes the dropdown. If you click anywhere else, it closes. -->
-    <script>
-        /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
-        let closeDropdown = function () {
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
 
-        }
-        function myFunction1(num) {
-            closeDropdown();
-            let el = document.getElementById("myDropdown" + num);
-            if (el) {
-                el.classList.toggle("show");
-                closeDropdown = function () {
-                    el.classList.remove("show");
-                }
-            } else {
-                closeDropdown = function () {
-                }
-            }
-        }
+    /* Responsive layout - when the screen is less than 800px wide, make the
+     two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 800px) {
 
-        window.onclick = function (event) {
-            if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-    </script>
-    <!-- Menu navigation stuff -->
-    <div class="topnav" id="myTopnav">
-        <!-- home page -->
-        <a href="/index" class="active">Página Principal</a>
-        <!-- about us -->
-        <div class="dropdown">
-            <button class="dropbtn" onclick="myFunction1(1)">Sobre Nós
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content" id="myDropdown1">
-                <a href="/pt/clube">O Nosso Clube</a>
-                <a href="/pt/imprensa">Imprensa</a>
-            </div>
-        </div>
-        <!-- about the city -->
-        <div class="dropdown">
-            <button class="dropbtn" onclick="myFunction1(2)">Braga
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content" id="myDropdown2">
-                <a href="/pt/braga-cidade">Cidade</a>
-                <a href="/pt/braga-transportes">Transportes</a>
-                <a href="/pt/braga-alojamento">Alojamento</a>
-                <a href="/pt/braga-onde_comer">Onde Comer</a>
-                <a href="/pt/braga-turismo">Turismo</a>
-            </div>
-        </div>
-        <!-- Seminar -->
-        <div class="dropdown">
-            <button class="dropbtn" onclick="myFunction1(3)">Seminário Internacional
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content" id="myDropdown3">
-                <a href="/pt/seminário_abertel.html">Sumário</a>
-                <a href="/pt/abertel">André Bertel</a>
-                <a href="/pt/info">Informações Gerais</a>
-                <a href="/pt/inscricao">Inscrição</a>
-                <a href="/pt/apoios">Apoios</a>
-            </div>
-        </div>
-        <!-- news: if on separate -->
-        <!-- <a href="/pt/noticias">Notícias</a> -->
-        <!-- images from previous events -->
-        <div class="dropdown">
-            <button class=" dropbtn" onclick="myFunction1(4)">Imagens
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content" id="myDropdown4">
-                <a href="/pt/imagens2019">Seminário 2019</a>
-            </div>
-        </div>
-        <!-- contact us -->
-        <a href="/pt/contactos">Contactos</a>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
-
-    <!-- Main Page stuff : Blog layout -->
-    <style>
-        /* Create two unequal columns that floats next to each other */
-        /* Left column */
-        .leftcolumn {
-            float: left;
-            width: 75%;
-        }
-
-        /* Right column */
+        .leftcolumn,
         .rightcolumn {
-            float: left;
-            width: 20%;
-            padding-left: 5%;
-        }
-
-        /* Fake image */
-        .fakeimg {
-            background-color: #af4c4c;
-            border: 2px solid rgb(75, 75, 75);
             width: 100%;
+            padding: 0;
         }
-
-        /* Add a card effect for articles */
-        .card {
-            background-color: white;
-            margin-top: 30px;
-        }
-
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        /* Responsive layout - when the screen is less than 800px wide, make the
-         two columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 800px) {
-
-            .leftcolumn,
-            .rightcolumn {
-                width: 100%;
-                padding: 0;
-            }
-        }
-    </style>
-    <!-- Html stuff -->
-    <div class="main">
-        <div class="row">
-            <!-- Left column -->
-            <div class="leftcolumn">
-                <!-- new card -->
-                <div class="card" id="Local_jantar">
-                    <div class="align_center">
-                        <h2>Local do jantar alterado</h2>
-                        <h5><i>Junho 6, 2023</i></h5>
-                    </div>
-                    <!-- text -->
-                    <div class="align_justify">
-                        <p>O local do jantar foi alterado para o restaurante "Mocho Eventos"
-                            (Endereço: "Rua de Santo André 71, Semelhe, 4705-780 Braga").
-                        </p>
-                    </div>
+    }
+</style>
+<!-- Html stuff -->
+<div class="main">
+    <div class="row">
+        <!-- Left column -->
+        <div class="leftcolumn">
+            <!-- new card -->
+            <div class="card" id="Local_jantar">
+                <div class="align_center">
+                    <h2>Local do jantar alterado</h2>
+                    <h5><i>Junho 6, 2023</i></h5>
                 </div>
-                <hr>
-                <!-- new card -->
-                <div class="card" id="Seminário_Confirmado">
-                    <div class="align_center">
-                        <h2>Seminário 2023 confirmado!</h2>
-                        <h2 style="color: #af4c4c">Descontos especiais para grupos<h2>
-                        <h5><i>Novembro 30, 2022</i></h5>
-                    </div>
-                    <!-- image -->
-                    <div class="align_center">
-                        <img style="width: 100%;" src="/images/cartaz2023.png" alt="Cartaz">
-                    </div>
-                    <!-- text -->
-                    <div class="align_justify">
-                        <p>Após uma pandemia que afetou tudo e todos, o
-                            <strong><em>Seminário Internacional Budo Karate</em></strong>
-                                encontra-se <strong>confirmado para a edição de 2023!</strong>
-                        </p>
-                        <p>As inscrições já se encontram abertas <a href="/pt/inscricao">aqui</a>.</p>
-                        <p>O montante de inscrições aceites é limitado, consoante a lotação máxima do espaço.
-                            Inscreva-se o quanto antes e garanta o seu lugar neste evento!</p>
-                        <p>Aceda a todas as informações <a href="/pt/seminário_abertel">aqui</a>.</p>
-                        <p>Avisos sobre o seminário serão publicados nesta página e nas redes sociais.
-                            Siga-nos e mantenha-se informado!</p>
-                    </div>
+                <!-- text -->
+                <div class="align_justify">
+                    <p>O local do jantar foi alterado para o restaurante "Mocho Eventos"
+                        (Endereço: "Rua de Santo André 71, Semelhe, 4705-780 Braga").
+                    </p>
                 </div>
-                <hr>
-                <!-- new card -->
-                <div class="card" id="Aniversário">
-                    <div class="align_center">
-                        <h2>Parabéns Karate Braga!</h2>
-                        <h5><i>Janeiro 21, 2022</i></h5>
-                    </div>
-                    <!-- image -->
-                    <div class="align_center">
-                        <img style="width: 100%;" src="/images/aniversario2022.jpeg" alt="Parabéns">
-                    </div>
-                    <!-- text -->
-                    <div class="align_justify">
-                        <p>O Karate Braga completa hoje 21 anos de existência e o seu fundador, Francisco Pinto, 21 anos
-                            de instrutor. Toda a família
-                            que faz ou fez parte deste projeto ao longo de todos estes anos está de parabéns.
-                            Venham muitos mais!</p>
-                    </div>
-                    <div class="align_center">
-                        <p><b>OSU! 🎂 🤛</b></p>
-                    </div>
-                </div>
-                <!-- Giving some space for right column -->
-                <br>
-                <br>
-                <hr>
-                <br>
             </div>
+            <hr>
+            <!-- new card -->
+            <div class="card" id="Seminário_Confirmado">
+                <div class="align_center">
+                    <h2>Seminário 2023 confirmado!</h2>
+                    <h2 style="color: #af4c4c">Descontos especiais para grupos<h2>
+                    <h5><i>Novembro 30, 2022</i></h5>
+                </div>
+                <!-- image -->
+                <div class="align_center">
+                    <img style="width: 100%;" src="/images/cartaz2023.png" alt="Cartaz">
+                </div>
+                <!-- text -->
+                <div class="align_justify">
+                    <p>Após uma pandemia que afetou tudo e todos, o
+                        <strong><em>Seminário Internacional Budo Karate</em></strong>
+                            encontra-se <strong>confirmado para a edição de 2023!</strong>
+                    </p>
+                    <p>As inscrições já se encontram abertas <a href="/pt/inscricao">aqui</a>.</p>
+                    <p>O montante de inscrições aceites é limitado, consoante a lotação máxima do espaço.
+                        Inscreva-se o quanto antes e garanta o seu lugar neste evento!</p>
+                    <p>Aceda a todas as informações <a href="/pt/seminário_abertel">aqui</a>.</p>
+                    <p>Avisos sobre o seminário serão publicados nesta página e nas redes sociais.
+                        Siga-nos e mantenha-se informado!</p>
+                </div>
+            </div>
+            <hr>
+            <!-- new card -->
+            <div class="card" id="Aniversário">
+                <div class="align_center">
+                    <h2>Parabéns Karate Braga!</h2>
+                    <h5><i>Janeiro 21, 2022</i></h5>
+                </div>
+                <!-- image -->
+                <div class="align_center">
+                    <img style="width: 100%;" src="/images/aniversario2022.jpeg" alt="Parabéns">
+                </div>
+                <!-- text -->
+                <div class="align_justify">
+                    <p>O Karate Braga completa hoje 21 anos de existência e o seu fundador, Francisco Pinto, 21 anos
+                        de instrutor. Toda a família
+                        que faz ou fez parte deste projeto ao longo de todos estes anos está de parabéns.
+                        Venham muitos mais!</p>
+                </div>
+                <div class="align_center">
+                    <p><b>OSU! 🎂 🤛</b></p>
+                </div>
+            </div>
+            <!-- Giving some space for right column -->
+            <br>
+            <br>
+            <hr>
+            <br>
+        </div>
 
-            <!-- Right column -->
-            <div class="align_center">
-                <div class="rightcolumn">
-                    <div class="card">
-                        <!-- About us -->
-                        <h2>KARATE BRAGA</h2>
-                        <!-- image -->
-                        <img style="height: 150px;" src="/images/logo.jpg" alt="Karate Braga">
-                        <!-- text -->
-                        <p><i>O nosso clube nasceu em Janeiro de 2001. Descubra mais sobre nós,
-                                venha visitar-nos!
-                            </i></p>
-                    </div>
-                    <div class="card">
-                        <h3>Em destaque</h3>
-                        <a href="#Seminário_Confirmado" style="text-decoration: none; color: white;">
-                            <div class="fakeimg">
-                                Seminário Confirmado
-                            </div>
-                        </a>
-                        <br>
+        <!-- Right column -->
+        <div class="align_center">
+            <div class="rightcolumn">
+                <div class="card">
+                    <!-- About us -->
+                    <h2>KARATE BRAGA</h2>
+                    <!-- image -->
+                    <img style="height: 150px;" src="/images/logo.jpg" alt="Karate Braga">
+                    <!-- text -->
+                    <p><i>O nosso clube nasceu em Janeiro de 2001. Descubra mais sobre nós,
+                            venha visitar-nos!
+                        </i></p>
+                </div>
+                <div class="card">
+                    <h3>Em destaque</h3>
+                    <a href="#Seminário_Confirmado" style="text-decoration: none; color: white;">
+                        <div class="fakeimg">
+                            Seminário Confirmado
+                        </div>
+                    </a>
+                    <br>
 
-                        <a href="#Aniversário" style="text-decoration: none; color: white;">
-                            <div class="fakeimg">
-                                Parabéns Karate Braga!
-                            </div>
-                        </a>
-                        <br>
-                    </div>
-                    <div class=" card">
-                        <h3>Siga-nos</h3>
-                        <a href="https://www.facebook.com/karatebraga" target="_blank"><img style="height: 50px;"
-                                src="/images/facebook-icon.png" alt="facebook"></a>
-                        <a href="https://www.youtube.com/channel/UCykJx-S6GuDOA4ysMTuDxMw/featured"
-                            target="_blank"><img style="height: 50px;" src="/images/youtube-icon.png"
-                                alt="Youtube Channel"></a>
-                        <a href="https://www.instagram.com/karatebraga/" target="_blank"><img style="height: 50px;"
-                                src="/images/instagram-icon.png" alt="instagram"></a>
-                        <a href="https://www.tiktok.com/@karatebraga" target="_blank"><img style="height: 50px;"
-                                src="/images/tiktok-icon.png" alt="tiktok"></a>
-                    </div>
+                    <a href="#Aniversário" style="text-decoration: none; color: white;">
+                        <div class="fakeimg">
+                            Parabéns Karate Braga!
+                        </div>
+                    </a>
+                    <br>
+                </div>
+                <div class=" card">
+                    <h3>Siga-nos</h3>
+                    <a href="https://www.facebook.com/karatebraga" target="_blank"><img style="height: 50px;"
+                            src="/images/facebook-icon.png" alt="facebook"></a>
+                    <a href="https://www.youtube.com/channel/UCykJx-S6GuDOA4ysMTuDxMw/featured"
+                        target="_blank"><img style="height: 50px;" src="/images/youtube-icon.png"
+                            alt="Youtube Channel"></a>
+                    <a href="https://www.instagram.com/karatebraga/" target="_blank"><img style="height: 50px;"
+                            src="/images/instagram-icon.png" alt="instagram"></a>
+                    <a href="https://www.tiktok.com/@karatebraga" target="_blank"><img style="height: 50px;"
+                            src="/images/tiktok-icon.png" alt="tiktok"></a>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
-
-    
-    <div class="footer">
-        <p>Seminário confirmado! 10 e 11 de Junho 2023</p>
-    </div>
-
-</body>
-
-</html>
+</div>

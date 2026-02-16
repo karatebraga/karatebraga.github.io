@@ -1,138 +1,12 @@
-<!DOCTYPE html>
-<html>
-<link rel="stylesheet" href="/style/style.css">
-<link rel="stylesheet" href="/style/footer.css">
-<link rel="stylesheet" href="/style/header.css">
-<link rel="stylesheet" href="/style/main.css">
-<link rel="stylesheet" href="/style/navmenu.css">
+---
+layout: default
+lang: pt
+title: "Página Principal | Karate Braga"
+og_title: "Página Principal | Karate Braga"
+og_description: "O nosso clube nasceu em Janeiro de 2001. Descubra mais sobre nós, venha visitar-nos!"
+---
 
-<!-- Page head -->
-
-<head>
-    <!-- Page title stuff-->
-    <meta property="og:title" content="Página Principal | Karate Braga" />
-    <meta property="og:type" content="website" />
-    <meta property="og:description"
-        content="O nosso clube nasceu em Janeiro de 2001. Descubra mais sobre nós, venha visitar-nos!" />
-    <meta property="og:image"
-        content="https://raw.githubusercontent.com/karatebraga/karatebraga.github.io/main/images/logo2.jpg" />
-    <meta property="og:image:type" content="image/jpeg" />
-    <meta property="og:image:width" content="400" />
-    <meta property="og:image:height" content="300" />
-    <meta property="og:image:alt" content="Karate Braga" />
-    <meta property="og:url" content="https://www.karatebraga.com/index" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="/images/logo.jpg">
-    <title>Página Principal | Karate Braga</title>
-
-    <!-- Header stuff -->
-    <div class="header">
-        <center>
-            <!-- Bandeira portuguesa -->
-            <a href="/index"><img style="width:50px;" src="/images/portugal.png" alt="Portugal"></a>
-            <!-- Bandeira inglesa -->
-            <a href="/en/index"><img style="width:50px;" src="/images/ingles.png" alt="English"></a>
-        </center>
-    </div>
-</head>
-
-<!-- Page body -->
-
-<body>
-    <!-- Script for the nav menu. If you click on it, it fixes the dropdown. If you click anywhere else, it closes. -->
-    <script>
-        /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
-        let closeDropdown = function () {
-
-        }
-        function myFunction1(num) {
-            closeDropdown();
-            let el = document.getElementById("myDropdown" + num);
-            if (el) {
-                el.classList.toggle("show");
-                closeDropdown = function () {
-                    el.classList.remove("show");
-                }
-            } else {
-                closeDropdown = function () {
-                }
-            }
-        }
-
-        window.onclick = function (event) {
-            if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-    </script>
-
-    <!-- Menu navigation stuff -->
-    <div class="topnav" id="myTopnav">
-        <!-- home page -->
-        <a href="/index" class="active">Página Principal</a>
-        <!-- about us -->
-        <div class="dropdown">
-            <button class="dropbtn" onclick="myFunction1(1)">Sobre Nós
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content" id="myDropdown1">
-                <a href="/pt/clube">O Nosso Clube</a>
-                <a href="/pt/imprensa">Imprensa</a>
-            </div>
-        </div>
-        <!-- about the city -->
-        <div class="dropdown">
-            <button class="dropbtn" onclick="myFunction1(2)">Braga
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content" id="myDropdown2">
-                <a href="/pt/braga-cidade">Cidade</a>
-                <a href="/pt/braga-transportes">Transportes</a>
-                <a href="/pt/braga-alojamento">Alojamento</a>
-                <a href="/pt/braga-onde_comer">Onde Comer</a>
-                <a href="/pt/braga-turismo">Turismo</a>
-            </div>
-        </div>
-        <!-- Seminar -->
-        <div class="dropdown">
-            <button class="dropbtn" onclick="myFunction1(3)">Seminário Internacional
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content" id="myDropdown3">
-                <a href="/pt/seminário_abertel.html">Sumário</a>
-                <a href="/pt/abertel">André Bertel</a>
-                <a href="/pt/info">Informações Gerais</a>
-                <a href="/pt/inscricao">Inscrição</a>
-                <a href="/pt/apoios">Apoios</a>
-            </div>
-        </div>
-        <!-- news: if on separate -->
-        <!-- <a href="/pt/noticias">Notícias</a> -->
-        <!-- images from previous events -->
-        <div class="dropdown">
-            <button class=" dropbtn" onclick="myFunction1(4)">Imagens
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content" id="myDropdown4">
-                <a href="/pt/imagens2019">Seminário 2019</a>
-            </div>
-        </div>
-        <!-- contact us -->
-        <a href="/pt/contactos">Contactos</a>
-        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-    </div>
-
-
-    <!-- Main page stuff -->
-
-    <div class="main">
+<div class="main">
         <!-- links para secções da página -->
         <div class="align_center">
             <ul class="breadcrumb">
@@ -358,21 +232,4 @@
         <!----------------------------------------------------------------------------------->
 
         <!-- Scripts -->
-        <script>
-            function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "topnav";
-                }
-            }
-        </script>
-
-        <div class="footer">
-            <p>Seminário confirmado! 10 e 11 de Junho 2023</p>
-        </div>
-
-</body>
-
-</html>
+        
