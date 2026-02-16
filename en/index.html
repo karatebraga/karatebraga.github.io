@@ -7,125 +7,154 @@ og_description: "Our club was born in January of 2001. Find more about us, come 
 nav_active: home
 ---
 
-<div class="main">
-        <div class="row">
-            <!-- Left column -->
-            <div class="leftcolumn">
-                <!-- new card -->
-                <div class="card" id="Local_jantar">
-                    <div class="align_center">
-                        <h2>Dinner's place changed</h2>
-                        <h5><i>June 6, 2023</i></h5>
-                    </div>
-                    <!-- text -->
-                    <div class="align_justify">
-                        <p>Due to some logistics, the dinner's place was changed and is now at the restaurant "Mocho Eventos"
-                            (Address: "Rua de Santo André 71, Semelhe, 4705-780 Braga").
-                        </p>
-                    </div>
-                </div>
-                <hr>
-                <!-- new card -->
-                <div class="card" id="Seminário_Confirmado">
-                    <div class="align_center">
-                        <h2>Seminar 2023 confirmed!</h2>
-                        <h2 style="color: #af4c4c">Special discounts for groups</h2>
-                        <h5><i>November 30, 2022</i></h5>
-                    </div>
-                    <!-- image -->
-                    <div class="align_center">
-                        <img style="width: 100%;" src="/images/cartaz2023.png" alt="Cartaz">
-                    </div>
-                    <!-- text -->
-                    <div class="align_justify">
-                        <p>After a pandemic that affected everything and everyone, the
-                            <strong><em>International Budo Karate Seminar</em></strong>
-                            is <strong>confirmed for the 2023 edition!</strong>
-                        </p>
-                        <p>Entries are now open <a href="/en/registration">here</a>.</p>
-                        <p>The amount of accepted registrations is limited, depending on the maximum capacity of the space.
-                            Sign up as soon as possible and guarantee your place at this event!</p>
-                        <p>Access to all the information <a href="/en/seminar_abertel">here</a>.</p>
-                        <p>Notices about the seminar will be published on this page and on social media.
-                            Follow us and stay informed!</p>
-                    </div>
-                </div>
-                <hr>
-                <!-- new card -->
-                <div class="card" id="Birthday">
-                    <div class="align_center">
-                        <h2>Happy Birthday Karate Braga!</h2>
-                        <h5><i>January 21, 2022</i></h5>
-                    </div>
-                    <!-- image -->
-                    <div class="align_center">
-                        <img style="width: 100%;" src="/images/aniversario2022.jpeg" alt="Parabéns">
-                    </div>
-                    <!-- text -->
-                    <div class="align_justify">
-                        <p>Today, Karate Braga celebrates 21 years of existence and its founder, Francisco Pinto, 21
-                            years as an instructor. All the family
-                            that is or was part of this project over all these years is to be congratulated.
-                            We can't wait for many more to come!</p>
-                    </div>
-                    <div class="align_center">
-                        <p><b>OSU! 🎂 🤛</b></p>
-                    </div>
-                </div>
-                <!-- Giving some space for right column -->
-                <br>
-                <br>
-                <hr>
-                <br>
-            </div>
+<!-- Main Page stuff : Blog layout -->
+<style>
+    /* Create two unequal columns that floats next to each other */
+    /* Left column */
+    .leftcolumn {
+        float: left;
+        width: 75%;
+    }
 
-            <!-- Right column -->
-            <div class="align_center">
-                <div class="rightcolumn">
-                    <div class="card">
-                        <!-- About us -->
-                        <h2>KARATE BRAGA</h2>
-                        <!-- image -->
-                        <img style="height: 150px;" src="/images/logo.jpg" alt="Karate Braga">
-                        <!-- text -->
-                        <p><i>Our club was born in January 2001. Find more about us, come visit us!
-                            </i></p>
-                    </div>
-                    <div class="card">
-                        <h3>Highlighted Posts</h3>
-                        <a href="#Seminário_Confirmado" style="text-decoration: none; color: white;">
-                            <div class="fakeimg">
-                                Seminar Confirmed
-                            </div>
-                        </a>
-                        <br>
-                        
-                        <a href="#Birthday" style="text-decoration: none; color: white;">
-                            <div class="fakeimg">
-                                Happy Birthday Karate Braga!
-                            </div>
-                        </a>
-                        <br>
-                    </div>
-                    <div class=" card">
-                        <h3>Follow us</h3>
-                        <a href="https://www.facebook.com/karatebraga" target="_blank"><img style="height: 50px;"
-                                src="/images/facebook-icon.png" alt="facebook"></a><a
-                            href="https://www.youtube.com/channel/UCykJx-S6GuDOA4ysMTuDxMw/featured"
-                            target="_blank"><img style="height: 50px;" src="/images/youtube-icon.png"
-                                alt="Youtube Channel"></a>
-                        <a href="https://www.instagram.com/karatebraga/" target="_blank"><img style="height: 50px;"
-                                src="/images/instagram-icon.png" alt="instagram"></a>
-                        <a href="https://www.tiktok.com/@karatebraga" target="_blank"><img style="height: 50px;" src="/images/tiktok-icon.png"
-                                alt="tiktok"></a>
-                    </div>
+    /* Right column */
+    .rightcolumn {
+        float: left;
+        width: 20%;
+        padding-left: 5%;
+    }
+
+    /* Fake image */
+    .fakeimg {
+        background-color: #af4c4c;
+        border: 2px solid rgb(75, 75, 75);
+        width: 100%;
+    }
+
+    /* Add a card effect for articles */
+    .card {
+        background-color: white;
+        margin-top: 30px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Responsive layout - when the screen is less than 800px wide, make the
+     two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 800px) {
+
+        .leftcolumn,
+        .rightcolumn {
+            width: 100%;
+            padding: 0;
+        }
+    }
+</style>
+
+<!-- Html stuff -->
+<div class="main">
+    <div class="row">
+        <!-- Left column -->
+        <div class="leftcolumn">
+            <hr>
+            <!-- new card -->
+            <div class="card" id="Seminário_Confirmado">
+                <div class="align_center">
+                    <h2>2026 Seminar Confirmed!</h2>
+                    <h2 style="color: #af4c4c">25 Years, 25 Tsukis!<h2>
+                            <h5><i>February 16th, 2026</i></h5>
+                </div>
+                <!-- image -->
+                <!--div class="align_center">
+                                <img style="width: 100%;" src="/images/cartaz2023.png" alt="Poster">
+                            </div>-->
+                <div
+                    style="width:100%;height:320px;display:flex;align-items:center;justify-content:center;background:#eee;color:#888;border:2px dashed #ccc;">
+                    <span style="font-size:1.7em;">[Seminar poster coming soon]</span>
+                </div>
+                <!-- text -->
+                <div class="align_justify">
+                    <p>In 2026, Karate Braga proudly celebrates its 25th anniversary! To mark this historic milestone, this international event is dedicated to commemorating the dojo's 25 years of existence.
+                    </p>
+                    <p>Special price: 25 euros for all participants.</p>
+                    <p>More information about registration <a href="/en/registration">here</a>.</p>
+                </div>
+                <div class="align_center">
+                    <p><b>OSU! 🎂 🤛</b></p>
+                </div>
+            </div>
+            <hr>
+            <!-- new card -->
+            <div class="card" id="Birthday">
+                <div class="align_center">
+                    <h2>Happy Birthday, Karate Braga!</h2>
+                    <h5><i>January 21st, 2026</i></h5>
+                </div>
+                <!-- text -->
+                <div class="align_justify">
+                    <p>Today, Karate Braga celebrates 25 years of existence and its founder, Francisco Pinto, marks 25 years as an instructor. All the family who have been, or are, part of this project over the years deserve congratulations.
+                        It is a historic and symbolic milestone for Karate Braga.
+                        Here’s to many more to come!
+                    </p>
+                </div>
+                <div class="align_center">
+                    <p><b>OSU! 🎂 🤛</b></p>
+                </div>
+            </div>
+            <!-- Giving some space for right column -->
+            <br>
+            <br>
+            <hr>
+            <br>
+        </div>
+
+        <!-- Right column -->
+        <div class="align_center">
+            <div class="rightcolumn">
+                <div class="card">
+                    <!-- About us -->
+                    <h2>KARATE BRAGA</h2>
+                    <!-- image -->
+                    <img style="height: 150px;" src="/images/logo.jpg" alt="Karate Braga">
+                    <!-- text -->
+                    <p><i>Our club was born in January 2001. Find more about us, come visit us!
+                        </i></p>
+                </div>
+                <div class="card">
+                    <h3>Highlighted Posts</h3>
+                    <a href="#Seminário_Confirmado" style="text-decoration: none; color: white;">
+                        <div class="fakeimg">
+                            Seminar Confirmed
+                        </div>
+                    </a>
+                    <br>
+                    
+                    <a href="#Birthday" style="text-decoration: none; color: white;">
+                        <div class="fakeimg">
+                            Happy Birthday Karate Braga!
+                        </div>
+                    </a>
+                    <br>
+                </div>
+                <div class=" card">
+                    <h3>Follow us</h3>
+                    <a href="https://www.facebook.com/karatebraga" target="_blank"><img style="height: 50px;"
+                            src="/images/facebook-icon.png" alt="facebook"></a><a
+                        href="https://www.youtube.com/channel/UCykJx-S6GuDOA4ysMTuDxMw/featured"
+                        target="_blank"><img style="height: 50px;" src="/images/youtube-icon.png"
+                            alt="Youtube Channel"></a>
+                    <a href="https://www.instagram.com/karatebraga/" target="_blank"><img style="height: 50px;"
+                            src="/images/instagram-icon.png" alt="instagram"></a>
+                    <a href="https://www.tiktok.com/@karatebraga" target="_blank"><img style="height: 50px;" src="/images/tiktok-icon.png"
+                            alt="tiktok"></a>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Quinta: treino de 1h para crianças (não divulgado, só para os clubes que querem. Procurar rendimento extra) 19h-20h -->
-    <!-- Sábado: 10H30 - 12h30; 14h-16h --> <!-- Jantar às 19h30 -->
-    <!-- Domingo: 10H30 - 12h30; 14h-16h -->
+</div>
 
 
