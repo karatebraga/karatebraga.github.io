@@ -12,3 +12,6 @@ footer_text_en: "Seminar confirmed! 5th, 6th and 7th of June 2026"
 exclude:
   - .dist
   - README.md
+  - vendor
+  - vendor/bundle
+  - _site
