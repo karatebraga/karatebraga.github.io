@@ -38,10 +38,6 @@ og_description: "O nosso clube nasceu em Janeiro de 2001. Descubra mais sobre n�
             </p>
 
             <p>
-                Nesta edição comemorativa dos 25 anos do clube, o valor da inscrição, tanto para praticantes nacionais como estrangeiros, é único e simbólico: apenas <strong>25 euros (1 dia)</strong> e <strong>35 euros (seminário completo)</strong> – preço comemorativo do 25º aniversário do Karate Braga. Não existem quaisquer preços especiais ou descontos, pois esta celebração é para todos!
-            </p>
-
-            <p>
                 Atendendo à vontade manifestada por muitos participantes, voltaremos a organizar no sábado um jantar de confraternização aberto a todos os praticantes e acompanhantes. O objetivo é fortalecer os laços de amizade num ambiente descontraído com o Sensei André Bertel, contando ainda com momentos animados de "karatecas no karaoke" (KK).
             </p>
 
@@ -82,8 +78,62 @@ og_description: "O nosso clube nasceu em Janeiro de 2001. Descubra mais sobre n�
             <h1 id="informaçoes"><u>Informações Gerais</u></h1>
         </div>
 
-        <div style="overflow-x:auto;">
-            <table class="center">
+        <style>
+            .info-table-wrap {
+                overflow-x: auto;
+                width: 100%;
+            }
+            .info-table {
+                width: 75%;
+                min-width: 280px;
+            }
+            @media screen and (max-width: 600px) {
+                .info-table-wrap {
+                    overflow-x: visible;
+                }
+                .info-table {
+                    width: 100%;
+                }
+                .info-table thead,
+                .info-table tbody,
+                .info-table tr,
+                .info-table td {
+                    display: block;
+                }
+                .info-table tr {
+                    margin-bottom: 1rem;
+                    border: 1px solid #dddddd;
+                    border-radius: 6px;
+                    padding: 0;
+                    text-align: left;
+                    background-color: #f9f9f9;
+                }
+                .info-table tr:nth-child(even) {
+                    background-color: #eeeeee;
+                }
+                .info-table td {
+                    border: none;
+                    padding: 10px 12px;
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+                .info-table td:first-child {
+                    font-weight: bold;
+                    padding-bottom: 4px;
+                    color: #333;
+                    border-bottom: 1px solid #ddd;
+                }
+                .info-table td:last-child {
+                    padding-top: 6px;
+                }
+                .info-table td a {
+                    word-break: break-all;
+                }
+            }
+        </style>
+
+        <div class="info-table-wrap">
+            <table class="center info-table">
                 <tr>
                     <td><b>Evento</b></td>
                     <td>3.º Seminário Internacional Budo Karate</td>
