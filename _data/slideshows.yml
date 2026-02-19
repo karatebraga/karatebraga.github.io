@@ -1,0 +1,71 @@
+# Shared slideshow image lists (single source of truth)
+
+club:
+  - /images/Album_Momentos/1.jpg
+  - /images/Album_Momentos/2.jpg
+  - /images/Album_Momentos/3.jpg
+  - /images/Album_Momentos/4.jpg
+  - /images/Album_Momentos/5.jpg
+  - /images/Album_Momentos/6.jpg
+  - /images/Album_Momentos/7.jpg
+  - /images/Album_Momentos/8.jpg
+  - /images/Album_Momentos/9.jpg
+  - /images/Album_Momentos/10.jpg
+  - /images/Album_Momentos/11.jpg
+  - /images/Album_Momentos/12.jpg
+  - /images/Album_Momentos/13.jpg
+  - /images/Album_Momentos/14.jpg
+  - /images/Album_Momentos/15.jpg
+  - /images/Album_Momentos/16.jpg
+  - /images/Album_Momentos/17.jpg
+  - /images/Album_Momentos/18.jpg
+  - /images/Album_Momentos/19.jpg
+  - /images/Album_Momentos/20.jpg
+  - /images/Album_Momentos/21.jpg
+  - /images/Album_Momentos/22.jpg
+  - /images/Album_Momentos/23.jpg
+  - /images/Album_Momentos/24.jpg
+  - /images/Album_Momentos/25.jpg
+  - /images/Album_Momentos/26.jpg
+  - /images/Album_Momentos/27.jpg
+  - /images/Album_Momentos/28.jpg
+  - /images/Album_Momentos/29.jpg
+  - /images/Album_Momentos/30.jpg
+  - /images/Album_Momentos/31.jpg
+  - /images/Album_Momentos/32.jpg
+  - /images/Album_Momentos/33.jpg
+  - /images/Album_Momentos/34.jpg
+  - /images/Album_Momentos/35.jpg
+  - /images/Album_Momentos/36.jpg
+  - /images/Album_Momentos/37.jpg
+  - /images/Album_Momentos/38.jpg
+  - /images/Album_Momentos/39.jpg
+  - /images/Album_Momentos/40.jpg
+  - /images/Album_Momentos/41.jpg
+  - /images/Album_Momentos/42.jpg
+  - /images/Album_Momentos/43.jpg
+  - /images/Album_Momentos/44.jpg
+  - /images/Album_Momentos/45.jpg
+  - /images/Album_Momentos/46.jpg
+  - /images/Album_Momentos/47.jpg
+
+abertel:
+  - /images/abertel2.jpg
+  - /images/abertel3.jpg
+  - /images/abertel5.jpg
+
+seminar_2019:
+  - /images/Seminar_2019/seminar1.jpg
+  - /images/Seminar_2019/seminar2.jpg
+  - /images/Seminar_2019/seminar3.jpg
+  - /images/Seminar_2019/seminar4.jpg
+  - /images/Seminar_2019/seminar5.jpg
+  - /images/Seminar_2019/seminar6.jpg
+  - /images/Seminar_2019/seminar7.jpg
+  - /images/Seminar_2019/seminar8.jpg
+  - /images/Seminar_2019/seminar9.jpg
+  - /images/Seminar_2019/seminar10.jpg
+  - /images/Seminar_2019/seminar11.jpg
+  - /images/Seminar_2019/seminar12.jpg
+  - /images/Seminar_2019/seminar13.jpg
+  - /images/Seminar_2019/seminar14.jpg

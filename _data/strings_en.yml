@@ -51,3 +51,12 @@ home:
   sidebar_follow: "Follow us"
   card_seminar_confirmed: "Seminar Confirmed"
   card_birthday: "Happy Birthday Karate Braga!"
+
+club:
+  dojo_link: "Dojo Location"
+  intro_line1: "Karate of Semelhe Braga was born in January 2001"
+  intro_line2: "The training venue is at Rua do Souto, Semelhe 4705-363 Braga"
+  follow: "Follow us"
+  photos: "Photos"
+  videos: "Videos"
+  dojo_location: "Location of our dojo"
