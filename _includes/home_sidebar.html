@@ -1,0 +1,35 @@
+{% if page.lang == "en" %}
+  {% assign s = site.data.strings_en %}
+  {% assign reg_href = "/en/registration" %}
+{% else %}
+  {% assign s = site.data.strings_pt %}
+  {% assign reg_href = "/pt/inscricao" %}
+{% endif %}
+<div class="align_center">
+    <div class="rightcolumn">
+        <div class="card">
+            <h2>KARATE BRAGA</h2>
+            <img style="width: 100%;" src="/images/logo.jpg" alt="Karate Braga">
+            <img style="width: 100%;" src="/images/aniversario2026.jpeg" alt="25 anos">
+            <p><i>{{ s.home.sidebar_about }}</i></p>
+        </div>
+        <div class="card">
+            <h3>{{ s.home.sidebar_highlight }}</h3>
+            <a href="#Seminário_Confirmado" style="text-decoration: none; color: white;">
+                <div class="fakeimg">{{ s.home.card_seminar_confirmed }}</div>
+            </a>
+            <br>
+            <a href="#Aniversário" style="text-decoration: none; color: white;">
+                <div class="fakeimg">{{ s.home.card_birthday }}</div>
+            </a>
+            <br>
+        </div>
+        <div class="card">
+            <h3>{{ s.home.sidebar_follow }}</h3>
+            <a href="https://www.facebook.com/karatebraga" target="_blank"><img style="height: 50px;" src="/images/facebook-icon.png" alt="facebook"></a>
+            <a href="https://www.youtube.com/channel/UCykJx-S6GuDOA4ysMTuDxMw/featured" target="_blank"><img style="height: 50px;" src="/images/youtube-icon.png" alt="Youtube Channel"></a>
+            <a href="https://www.instagram.com/karatebraga/" target="_blank"><img style="height: 50px;" src="/images/instagram-icon.png" alt="instagram"></a>
+            <a href="https://www.tiktok.com/@karatebraga" target="_blank"><img style="height: 50px;" src="/images/tiktok-icon.png" alt="tiktok"></a>
+        </div>
+    </div>
+</div>

@@ -7,72 +7,19 @@ og_description: "O nosso clube nasceu em Janeiro de 2001. Descubra mais sobre n�
 nav_active: home
 ---
 
-<!-- Main Page stuff : Blog layout -->
-<style>
-    /* Create two unequal columns that floats next to each other */
-    /* Left column */
-    .leftcolumn {
-        float: left;
-        width: 75%;
-    }
-
-    /* Right column */
-    .rightcolumn {
-        float: left;
-        width: 20%;
-        padding-left: 5%;
-    }
-
-    /* Fake image */
-    .fakeimg {
-        background-color: #af4c4c;
-        border: 2px solid rgb(75, 75, 75);
-        width: 100%;
-    }
-
-    /* Add a card effect for articles */
-    .card {
-        background-color: white;
-        margin-top: 30px;
-    }
-
-    /* Clear floats after the columns */
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-
-    /* Responsive layout - when the screen is less than 800px wide, make the
-     two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 800px) {
-
-        .leftcolumn,
-        .rightcolumn {
-            width: 100%;
-            padding: 0;
-        }
-    }
-</style>
-
-<!-- Html stuff -->
 <div class="main">
     <div class="row">
-        <!-- Left column -->
         <div class="leftcolumn">
             <hr>
-            <!-- new card -->
             <div class="card" id="Seminário_Confirmado">
                 <div class="align_center">
                     <h2>Seminário 2026 Confirmado!</h2>
-                    <h2 style="color: #af4c4c">Preço Excecional Comemorativo! Karate Braga 25 Anos!<h2>
+                    <h2 style="color: #af4c4c">Preço Excecional Comemorativo! Karate Braga 25 Anos!</h2>
                     <h5><i>Junho 5, 6 e 7, 2026</i> (<a href="/pt/inscricao">inscrição</a>)</h5>
                 </div>
-                <!-- image -->
                 <div class="align_center">
                     <img style="width: 100%; max-width: 850px;" src="/images/cartaz2026.jpeg" alt="Cartaz">
                 </div>
-                <!-- text -->
                 <div class="align_justify">
                     <p>Em 2026, o Karate Braga celebra orgulhosamente o seu 25º aniversário! Para assinalar este marco histórico, este evento internacional integra-se nas comemorações dos 25 anos de existência deste clube.</p>
                     <p>Preço Excecional: <span style="color:#af4c4c;">25 tsuki€</span> (1 dia) e <span style="color:#af4c4c;">35 tsuki€</span> (seminário completo). Para todos os participantes.</p>
@@ -83,73 +30,23 @@ nav_active: home
                 </div>
             </div>
             <hr>
-            <!-- new card -->
             <div class="card" id="Aniversário">
                 <div class="align_center">
                     <h2>Parabéns Karate Braga!</h2>
                     <h5><i>Janeiro 21, 2026</i></h5>
                 </div>
-                <!-- text -->
                 <div class="align_justify">
-                    <p>O Karate Braga completa hoje 25 anos de existência e o seu fundador, Francisco Pinto, 25 anos
-                        de instrutor. Toda a família que faz ou fez parte deste projeto ao longo de todos estes anos está de parabéns.
-                        Trata-se de um marco histórico e simbólico para o Karate Braga.
-                        Esperamos que venham muitos mais!</p>
+                    <p>O Karate Braga completa hoje 25 anos de existência e o seu fundador, Francisco Pinto, 25 anos de instrutor. Toda a família que faz ou fez parte deste projeto ao longo de todos estes anos está de parabéns. Trata-se de um marco histórico e simbólico para o Karate Braga. Esperamos que venham muitos mais!</p>
                 </div>
                 <div class="align_center">
                     <p><b>OSU! 🎂 🤛</b></p>
                 </div>
             </div>
-            <!-- Giving some space for right column -->
             <br>
             <br>
             <hr>
             <br>
         </div>
-
-        <!-- Right column -->
-        <div class="align_center">
-            <div class="rightcolumn">
-                <div class="card">
-                    <!-- About us -->
-                    <h2>KARATE BRAGA</h2>
-                    <!-- image -->
-                    <img style="width: 100%;" src="/images/logo.jpg" alt="Karate Braga">
-                    <img style="width: 100%;" src="/images/aniversario2026.jpeg" alt="25anos">
-                    <!-- text -->
-                    <p><i>O nosso clube nasceu em Janeiro de 2001. Descubra mais sobre nós,
-                            venha visitar-nos!
-                        </i></p>
-                </div>
-                <div class="card">
-                    <h3>Em destaque</h3>
-                    <a href="#Seminário_Confirmado" style="text-decoration: none; color: white;">
-                        <div class="fakeimg">
-                            Seminário Confirmado
-                        </div>
-                    </a>
-                    <br>
-
-                    <a href="#Aniversário" style="text-decoration: none; color: white;">
-                        <div class="fakeimg">
-                            Parabéns Karate Braga!
-                        </div>
-                    </a>
-                    <br>
-                </div>
-                <div class=" card">
-                    <h3>Siga-nos</h3>
-                    <a href="https://www.facebook.com/karatebraga" target="_blank"><img style="height: 50px;"
-                            src="/images/facebook-icon.png" alt="facebook"></a>
-                    <a href="https://www.youtube.com/channel/UCykJx-S6GuDOA4ysMTuDxMw/featured"
-                        target="_blank"><img style="height: 50px;" src="/images/youtube-icon.png"
-                            alt="Youtube Channel"></a>
-                    <a href="https://www.instagram.com/karatebraga/" target="_blank"><img style="height: 50px;"
-                            src="/images/instagram-icon.png" alt="instagram"></a>
-                    <a href="https://www.tiktok.com/@karatebraga" target="_blank"><img style="height: 50px;"
-                            src="/images/tiktok-icon.png" alt="tiktok"></a>
-                </div>
-            </div>
-        </div>
+        {% include home_sidebar.html %}
     </div>
 </div>

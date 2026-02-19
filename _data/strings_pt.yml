@@ -1,0 +1,53 @@
+# Portuguese UI strings (source of truth for structure)
+
+nav:
+  home_label: "Página Principal"
+  home_href: "/index"
+  about_us: "Sobre Nós"
+  club_label: "O Nosso Clube"
+  club_href: "/pt/clube"
+  press_label: "Imprensa"
+  press_href: "/pt/imprensa"
+  braga: "Braga"
+  city_label: "Cidade"
+  city_href: "/pt/braga-cidade"
+  seminar: "Seminário Internacional"
+  seminar_summary_label: "Sumário"
+  seminar_summary_href: "/pt/seminário_abertel.html"
+  abertel_label: "André Bertel"
+  abertel_href: "/pt/abertel"
+  info_label: "Informações Gerais"
+  info_href: "/pt/info"
+  registration_label: "Inscrição"
+  registration_href: "/pt/inscricao"
+  sponsors_label: "Apoios"
+  sponsors_href: "/pt/apoios"
+  images: "Imagens"
+  images2019_label: "Seminário 2019"
+  images2019_href: "/pt/imagens2019"
+  images2023_label: "Seminário 2023"
+  images2023_href: "/pt/imagens2023"
+  contacts_label: "Contactos"
+  contacts_href: "/pt/contactos"
+
+footer:
+  default: "Seminário confirmado! 5, 6 e 7 de Junho 2026"
+
+contact_form:
+  title: "Contacte-nos diretamente!"
+  name_placeholder: "O seu nome"
+  email_placeholder: "O seu email"
+  message_placeholder: "A sua mensagem"
+  submit: "Enviar"
+  also: "Poderá também contactar-nos através:"
+  seminar_email: "Email do seminário:"
+  club_email: "Email do clube Karate Braga:"
+  messenger_club: "Messenger Karate Braga:"
+  messenger_francisco: "Messenger Francisco Pinto:"
+
+home:
+  sidebar_about: "O nosso clube nasceu em Janeiro de 2001. Descubra mais sobre nós, venha visitar-nos!"
+  sidebar_highlight: "Em destaque"
+  sidebar_follow: "Siga-nos"
+  card_seminar_confirmed: "Seminário Confirmado"
+  card_birthday: "Parabéns Karate Braga!"

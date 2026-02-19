@@ -5,10 +5,6 @@ url: https://www.karatebraga.com
 # OpenGraph defaults
 og_image: https://raw.githubusercontent.com/karatebraga/karatebraga.github.io/main/images/logo2.jpg
 
-# Footer defaults (can be overridden per-page)
-footer_text_pt: "Seminário confirmado! 5, 6 e 7 de Junho 2026"
-footer_text_en: "Seminar confirmed! 5th, 6th and 7th of June 2026"
-
 exclude:
   - .dist
   - README.md

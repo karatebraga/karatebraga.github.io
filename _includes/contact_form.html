@@ -1,0 +1,42 @@
+{% if page.lang == "en" %}
+  {% assign s = site.data.strings_en %}
+{% else %}
+  {% assign s = site.data.strings_pt %}
+{% endif %}
+
+<div class="align_center">
+    <h1>{{ s.contact_form.title }}</h1>
+    <div class="container contact-form">
+        <form target="_blank" action="https://formsubmit.co/127d493e273b1ad939e9359ff94eba41" method="POST">
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="col">
+                        <input type="text" name="name" class="form-control" placeholder="{{ s.contact_form.name_placeholder }}" required>
+                    </div>
+                    <div class="col">
+                        <input type="text" name="email" class="form-control" placeholder="{{ s.contact_form.email_placeholder }}" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" name="message" rows="10" placeholder="{{ s.contact_form.message_placeholder }}" required></textarea>
+            </div>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <button type="submit" class="button button3">{{ s.contact_form.submit }}</button>
+        </form>
+    </div>
+    <br>
+    <hr>
+    <p><i><b>{{ s.contact_form.also }}</b></i></p>
+    <br>
+    <a href="https://www.facebook.com/karatebraga" target="_blank"><img style="height: 50px;" src="/images/facebook-icon.png" alt="facebook"></a>
+    <a href="https://www.youtube.com/channel/UCykJx-S6GuDOA4ysMTuDxMw/featured" target="_blank"><img style="height: 50px;" src="/images/youtube-icon.png" alt="Youtube Channel"></a>
+    <a href="https://www.instagram.com/karatebraga/" target="_blank"><img style="height: 50px;" src="/images/instagram-icon.png" alt="instagram"></a>
+    <a href="https://www.tiktok.com/@karatebraga" target="_blank"><img style="height: 50px;" src="/images/tiktok-icon.png" alt="tiktok"></a>
+    <p style="font-size: 12px;">{{ s.contact_form.seminar_email }} <a href="mailto:abptkaratebraga@gmail.com" target="_blank" style="font-size: 12px;">abptkaratebraga@gmail.com</a></p>
+    <p style="font-size: 12px;">{{ s.contact_form.club_email }} <a href="mailto:karatesemelhe@hotmail.com" target="_blank" style="font-size: 12px;">karatesemelhe@hotmail.com</a></p>
+    <p style="font-size: 12px;">{{ s.contact_form.messenger_club }} <a href="https://www.facebook.com/messages/t/karatebraga" target="_blank" style="font-size: 12px;">www.facebook.com/messages/t/karatebraga</a></p>
+    <p style="font-size: 12px;">{{ s.contact_form.messenger_francisco }} <a href="https://www.facebook.com/messages/t/franciscojmpinto" target="_blank" style="font-size: 12px;">www.facebook.com/messages/t/franciscojmpinto</a></p>
+    <br>
+</div>

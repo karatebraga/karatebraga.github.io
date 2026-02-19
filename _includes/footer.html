@@ -1,9 +1,13 @@
+{% if page.lang == "en" %}
+  {% assign s = site.data.strings_en %}
+{% else %}
+  {% assign s = site.data.strings_pt %}
+{% endif %}
+
 <div class="footer">
   {% if page.footer_text %}
     <p>{{ page.footer_text }}</p>
-  {% elsif page.lang == "en" %}
-    <p>{{ site.footer_text_en }}</p>
   {% else %}
-    <p>{{ site.footer_text_pt }}</p>
+    <p>{{ s.footer.default }}</p>
   {% endif %}
 </div>

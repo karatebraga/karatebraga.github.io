@@ -1,0 +1,53 @@
+# English UI strings (same structure as PT, translated)
+
+nav:
+  home_label: "Home Page"
+  home_href: "/en/index"
+  about_us: "About Us"
+  club_label: "Our Club"
+  club_href: "/en/club"
+  press_label: "Press"
+  press_href: "/en/press"
+  braga: "Braga"
+  city_label: "City"
+  city_href: "/en/braga-city"
+  seminar: "International Seminar"
+  seminar_summary_label: "Summary"
+  seminar_summary_href: "/en/seminar_abertel.html"
+  abertel_label: "André Bertel"
+  abertel_href: "/en/abertel"
+  info_label: "General Information"
+  info_href: "/en/info"
+  registration_label: "Registration"
+  registration_href: "/en/registration"
+  sponsors_label: "Sponsors"
+  sponsors_href: "/en/sponsors"
+  images: "Images"
+  images2019_label: "Seminar 2019"
+  images2019_href: "/en/images2019"
+  images2023_label: "Seminar 2023"
+  images2023_href: "/en/images2023"
+  contacts_label: "Contacts"
+  contacts_href: "/en/contacts"
+
+footer:
+  default: "Seminar confirmed! 5th, 6th and 7th of June 2026"
+
+contact_form:
+  title: "Contact us directly!"
+  name_placeholder: "Your name"
+  email_placeholder: "Your email"
+  message_placeholder: "Your message"
+  submit: "Send"
+  also: "You can also contact us through:"
+  seminar_email: "Seminar's Email:"
+  club_email: "Karate Braga's Email:"
+  messenger_club: "Messenger Karate Braga:"
+  messenger_francisco: "Messenger Francisco Pinto:"
+
+home:
+  sidebar_about: "Our club was born in January 2001. Find out more about us, come visit us!"
+  sidebar_highlight: "Highlighted Posts"
+  sidebar_follow: "Follow us"
+  card_seminar_confirmed: "Seminar Confirmed"
+  card_birthday: "Happy Birthday Karate Braga!"
