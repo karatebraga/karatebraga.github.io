@@ -266,6 +266,13 @@ body {
   font-size: var(--font-size-lg);
 }
 
+@media screen and (max-width: 600px) {
+  .main {
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+  }
+}
+
 .main .row {
   display: flex;
   flex-wrap: wrap;
