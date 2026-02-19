@@ -268,8 +268,8 @@ body {
 
 @media screen and (max-width: 600px) {
   .main {
-    padding-left: var(--space-md);
-    padding-right: var(--space-md);
+    padding-left: var(--space-sm);
+    padding-right: var(--space-sm);
   }
 }
 
