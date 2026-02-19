@@ -7,12 +7,19 @@ og_description: "Our club was born in January of 2001. Find more about us, come 
 ---
 
 <div class="main">
-    <div class="align_center">
-        <h2>In 2019 our Seminar looked like this</h2>
-        {% include videos_2019.html %}
-        <br>
-        <hr>
-        <br>
-        {% include slideshow.html gallery="seminar_2019" %}
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <div class="align_center">
+                    <h2>In 2019 our Seminar looked like this</h2>
+                    {% include videos_2019.html %}
+                </div>
+            </div>
+            <div class="card">
+                <div class="align_center">
+                    {% include slideshow.html gallery="seminar_2019" %}
+                </div>
+            </div>
+        </div>
     </div>
 </div>

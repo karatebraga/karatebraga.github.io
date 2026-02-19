@@ -7,19 +7,28 @@ og_description: "Our club was born in January of 2001. Find more about us, come 
 ---
 
 <div class="main">
-    <div class="align_center">
-        <h2>Sensei</h2>
-        <h1>André Bertel</h1>
-        <a href='https://andrebertel.blogspot.com/' target='_blank'><input type='button'
-                style='padding-left:10px;padding-top:10px;padding-right:10px;padding-bottom:10px;margin-left:10px;margin-top:10px;margin-right:10px;margin-bottom:10px;background-color:#ffa500;color:#000000;border-left-width:0px;border-top-width:0px;border-right-width:0px;border-bottom-width:0px;border-color:#d5d5d5;border-radius:100px;cursor:pointer'
-                value='andrebertel.blogspot.com' onMouseOver=this.style.backgroundColor='#ffc800';this.style.color='#320000';this.style.borderColor='#d5d5d5'
-                onMouseOut=this.style.backgroundColor='#ffa500';this.style.color='#000000';this.style.borderColor='#d5d5d5' /></a><br>
-        <script src="https://apis.google.com/js/platform.js"></script>
-        <div class="g-ytsubscribe" data-channel="AndreBertel" data-layout="full" data-count="default"></div>
-        <hr>
-
-        {% include slideshow.html gallery="abertel" %}
-        <hr>
-        {% include videos_abertel.html %}
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <div class="align_center">
+                    <h2>Sensei</h2>
+                    <h1>André Bertel</h1>
+                    <a href="https://andrebertel.blogspot.com/" target="_blank" rel="noopener" class="button button2">andrebertel.blogspot.com</a>
+                    <br>
+                    <script src="https://apis.google.com/js/platform.js"></script>
+                    <div class="g-ytsubscribe" data-channel="AndreBertel" data-layout="full" data-count="default"></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="align_center">
+                    {% include slideshow.html gallery="abertel" %}
+                </div>
+            </div>
+            <div class="card">
+                <div class="align_center">
+                    {% include videos_abertel.html %}
+                </div>
+            </div>
+        </div>
     </div>
 </div>
