@@ -443,7 +443,7 @@ th {
 }
 
 tr:nth-child(odd) {
-  background-color: #ececec;
+  background-color: var(--color-surface);
 }
 
 tr:nth-child(even) {
