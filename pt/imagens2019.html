@@ -6,6 +6,49 @@ og_title: "P√°gina Principal | Karate Braga"
 og_description: "O nosso clube nasceu em Janeiro de 2001. Descubra mais sobre n√≥s, venha visitar-nos!"
 ---
 
+<style>
+    .slideshow-container {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .mySlides {
+        display: none;
+        width: 100%;
+        height: 350px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #111;
+    }
+    .mySlides img {
+        max-height: 100%;
+        max-width: 100%;
+        width: auto;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+        background: #222;
+    }
+    .dot {
+        height: 13px;
+        width: 13px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.3s;
+        cursor: pointer;
+    }
+    .dot.active {
+        background-color: #e67b2a;
+    }
+</style>
+
 <div class="main">
         <div class="align_center">
             <h2>Em 2019 o nosso Semin√°rio foi assim</h2>
@@ -28,20 +71,20 @@ og_description: "O nosso clube nasceu em Janeiro de 2001. Descubra mais sobre n√
             <!-- Inserir fotos num slideshow -->
             <div class="slideshow-container">
                 <!-- images -->
-                <div class="mySlides fade"><img style="width:100%;" src="/images/Seminar_2019/seminar1.jpg"></div>
-                <div class="mySlides fade"><img style="width:100%;" src="/images/Seminar_2019/seminar2.jpg"></div>
-                <div class="mySlides fade"><img style="width:100%;" src="/images/Seminar_2019/seminar3.jpg"></div>
-                <div class="mySlides fade"><img style="width:100%;" src="/images/Seminar_2019/seminar4.jpg"></div>
-                <div class="mySlides fade"><img style="width:100%;" src="/images/Seminar_2019/seminar5.jpg"></div>
-                <div class="mySlides fade"><img style="width:100%;" src="/images/Seminar_2019/seminar6.jpg"></div>
-                <div class="mySlides fade"><img style="width:100%;" src="/images/Seminar_2019/seminar7.jpg"></div>
-                <div class="mySlides fade"><img style="width:100%;" src="/images/Seminar_2019/seminar8.jpg"></div>
-                <div class="mySlides fade"><img style="width:100%;" src="/images/Seminar_2019/seminar9.jpg"></div>
-                <div class="mySlides fade"><img style="width:100%;" src="/images/Seminar_2019/seminar10.jpg"></div>
-                <div class="mySlides fade"><img style="width:100%;" src="/images/Seminar_2019/seminar11.jpg"></div>
-                <div class="mySlides fade"><img style="width:100%;" src="/images/Seminar_2019/seminar12.jpg"></div>
-                <div class="mySlides fade"><img style="width:100%;" src="/images/Seminar_2019/seminar13.jpg"></div>
-                <div class="mySlides fade"><img style="width:100%;" src="/images/Seminar_2019/seminar14.jpg"></div>
+                <div class="mySlides fade"><img src="/images/Seminar_2019/seminar1.jpg"></div>
+                <div class="mySlides fade"><img src="/images/Seminar_2019/seminar2.jpg"></div>
+                <div class="mySlides fade"><img src="/images/Seminar_2019/seminar3.jpg"></div>
+                <div class="mySlides fade"><img src="/images/Seminar_2019/seminar4.jpg"></div>
+                <div class="mySlides fade"><img src="/images/Seminar_2019/seminar5.jpg"></div>
+                <div class="mySlides fade"><img src="/images/Seminar_2019/seminar6.jpg"></div>
+                <div class="mySlides fade"><img src="/images/Seminar_2019/seminar7.jpg"></div>
+                <div class="mySlides fade"><img src="/images/Seminar_2019/seminar8.jpg"></div>
+                <div class="mySlides fade"><img src="/images/Seminar_2019/seminar9.jpg"></div>
+                <div class="mySlides fade"><img src="/images/Seminar_2019/seminar10.jpg"></div>
+                <div class="mySlides fade"><img src="/images/Seminar_2019/seminar11.jpg"></div>
+                <div class="mySlides fade"><img src="/images/Seminar_2019/seminar12.jpg"></div>
+                <div class="mySlides fade"><img src="/images/Seminar_2019/seminar13.jpg"></div>
+                <div class="mySlides fade"><img src="/images/Seminar_2019/seminar14.jpg"></div>
             </div>
             <br>
             <!-- Same amount of dot as images -->
@@ -78,8 +121,10 @@ og_description: "O nosso clube nasceu em Janeiro de 2001. Descubra mais sobre n√
                     for (i = 0; i < dots.length; i++) {
                         dots[i].className = dots[i].className.replace(" active", "");
                     }
-                    slides[slideIndex - 1].style.display = "block";
-                    dots[slideIndex - 1].className += " active";
+                    slides[slideIndex - 1].style.display = "flex";
+                    if (dots[slideIndex - 1]) {
+                        dots[slideIndex - 1].className += " active";
+                    }
                     setTimeout(showSlides, 3000); // Change image every 3 seconds
                 }
             </script>
