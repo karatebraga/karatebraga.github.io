@@ -7,44 +7,60 @@ og_description: "O nosso clube nasceu em Janeiro de 2001. Descubra mais sobre n�
 ---
 
 <div class="main">
-    <center>
-        <p style="font-size:200%;">Seminário Internacional</p>
-        <h2 style="color: #af4c4c">Preço Excecional Comemorativo! Karate Braga 25 Anos!</h2>
-        <h1>André Bertel</h1>
-        <h3><i>Braga - Portugal</i></h3>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card" id="seminar-hero">
+                <div class="align_center">
+                    <h2>Seminário Internacional</h2>
+                    <h2 style="color: #af4c4c">Preço Excecional Comemorativo! Karate Braga 25 Anos!</h2>
+                    <h1>André Bertel</h1>
+                    <h5><i>Braga - Portugal</i></h5>
+                    <a href="/pt/inscricao"><button class="button button1">Inscrição</button></a>
+                    <p style="font-size: 0.875rem;"><i>(Clique aqui para se inscrever)</i></p>
+                </div>
+                <div class="align_center">
+                    {% include poster.html %}
+                </div>
+            </div>
 
-        <a href="/pt/inscricao"><button class="button button1">Inscrição</button></a>
+            <div class="card" id="horario-treinos">
+                <div class="align_center">
+                    <h3><u>Horário dos Treinos</u></h3>
+                </div>
+                <div class="align_center">
+                    <p>Sexta-feira: <strong>18h30 às 20h30</strong></p>
+                    <p>Sábado: <strong>10h30 às 12h30</strong> e <strong>14h00 às 16h00</strong></p>
+                    <p>Domingo: <strong>10h30 às 12h30</strong> e <strong>14h00 às 16h00</strong></p>
+                </div>
+            </div>
 
-        <p style="font-size:50%;"><i>(Clique aqui para se inscrever)</i></p>
-        <hr>
-        <!-- image -->
-        <div class="align_center">
-            {% include poster.html %}
+            <div class="card" id="jantar-confraternizacao">
+                <div class="align_center">
+                    <h3><u>Jantar de Confraternização com Sensei André Bertel</u></h3>
+                </div>
+                <div class="align_center">
+                    <p><i style="color: grey;">A definir</i></p>
+                </div>
+            </div>
+
+            <div class="card" id="local-treino">
+                <div class="align_center">
+                    <h3><u>Local de treino</u></h3>
+                </div>
+                <div class="align_center">
+                    <p>Pavilhão Desportivo de Real</p>
+                    <p>(Rua Padre Manuel Guimarães, 4700-292 Real, Braga, Portugal)</p>
+                </div>
+            </div>
+
+            <div class="card" id="local-jantar">
+                <div class="align_center">
+                    <h3><u>Local do jantar</u></h3>
+                </div>
+                <div class="align_center">
+                    <p><i style="color: grey;">A definir</i></p>
+                </div>
+            </div>
         </div>
-        <hr>
-        <!-- horário do jantar -->
-
-        <h4><i><u>Horário dos Treinos:</u></i></h4>
-        <p>Sexta-feira: <strong>18h30 às 20h30</strong></p>
-        <p>Sábado: <strong>10h30 às 12h30</strong> e <strong>14h00 às 16h00</strong></p>
-        <p>Domingo: <strong>10h30 às 12h30</strong> e <strong>14h00 às 16h00</strong></p>
-
-        <hr>
-        <h4><i><u>Jantar de Confraternização com Sensei André Bertel:</u></i></h4>
-        <!--p>Sábado: 19h30</p>-->
-        <p><i style="color: grey;">A definir</i></p>
-        <hr>
-
-        <h4><i><u>Local de treino:</u></i></h4>
-        <p>Pavilhão Desportivo de Real</p>
-        <p>(Rua Padre Manuel Guimarães, 4700-292 Real, Braga, Portugal)</p>
-
-        <hr>
-
-        <h4><i><u>Local do jantar:</u></i></h4>
-        <!--p>Restaurante: Mocho Eventos</p>-->
-        <!--p>Rua de Santo André 71, Semelhe, 4705-780 Braga</p>-->
-        <p><i style="color: grey;">A definir</i></p>
-
-    </center>
+    </div>
 </div>
