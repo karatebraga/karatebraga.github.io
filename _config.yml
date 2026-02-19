@@ -2,6 +2,8 @@ title: Karate Braga
 description: Karate Braga official website.
 url: https://www.karatebraga.com
 
+registration_form_url: "https://docs.google.com/forms/d/e/1FAIpQLSeINqjQkd7ULqRaTx2ub_P0rr9lw7LcMR8dc-VfkquT1Q7DlQ/viewform?usp=sharing&ouid=113558872904093687420"
+
 # OpenGraph defaults
 og_image: https://raw.githubusercontent.com/karatebraga/karatebraga.github.io/main/images/logo2.jpg
 
