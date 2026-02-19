@@ -9,8 +9,8 @@
   <a href="{{ s.nav.home_href }}" class="{% if nav_active == 'home' %}active{% endif %}">{{ s.nav.home_label }}</a>
 
   <div class="dropdown">
-    <button class="dropbtn" onclick="myFunction1(1)">{{ s.nav.about_us }}
-      <i class="fa fa-caret-down"></i>
+    <button class="dropbtn" onclick="myFunction1(1)" aria-expanded="false" aria-haspopup="true">{{ s.nav.about_us }}
+      <span class="nav-caret" aria-hidden="true"></span>
     </button>
     <div class="dropdown-content" id="myDropdown1">
       <a href="{{ s.nav.club_href }}">{{ s.nav.club_label }}</a>
@@ -19,8 +19,8 @@
   </div>
 
   <div class="dropdown">
-    <button class="dropbtn" onclick="myFunction1(2)">{{ s.nav.braga }}
-      <i class="fa fa-caret-down"></i>
+    <button class="dropbtn" onclick="myFunction1(2)" aria-expanded="false" aria-haspopup="true">{{ s.nav.braga }}
+      <span class="nav-caret" aria-hidden="true"></span>
     </button>
     <div class="dropdown-content" id="myDropdown2">
       <a href="{{ s.nav.city_href }}">{{ s.nav.city_label }}</a>
@@ -28,8 +28,8 @@
   </div>
 
   <div class="dropdown">
-    <button class="dropbtn" onclick="myFunction1(3)">{{ s.nav.seminar }}
-      <i class="fa fa-caret-down"></i>
+    <button class="dropbtn" onclick="myFunction1(3)" aria-expanded="false" aria-haspopup="true">{{ s.nav.seminar }}
+      <span class="nav-caret" aria-hidden="true"></span>
     </button>
     <div class="dropdown-content" id="myDropdown3">
       <a href="{{ s.nav.seminar_summary_href }}">{{ s.nav.seminar_summary_label }}</a>
@@ -41,8 +41,8 @@
   </div>
 
   <div class="dropdown">
-    <button class="dropbtn" onclick="myFunction1(4)">{{ s.nav.images }}
-      <i class="fa fa-caret-down"></i>
+    <button class="dropbtn" onclick="myFunction1(4)" aria-expanded="false" aria-haspopup="true">{{ s.nav.images }}
+      <span class="nav-caret" aria-hidden="true"></span>
     </button>
     <div class="dropdown-content" id="myDropdown4">
       <a href="{{ s.nav.images2019_href }}">{{ s.nav.images2019_label }}</a>
