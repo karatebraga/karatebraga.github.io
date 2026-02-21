@@ -355,6 +355,12 @@ body {
   color: var(--color-primary);
 }
 
+/* Card promo line (home / highlight text under title) */
+.card__promo {
+  margin: 0 0 var(--space-sm);
+  font-weight: 600;
+}
+
 .venue-map-link {
   display: inline-flex;
   align-items: center;
@@ -752,6 +758,11 @@ ul.breadcrumb li a:hover {
 a:hover .fakeimg {
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
+}
+
+.sidebar-card-link {
+  text-decoration: none;
+  color: white;
 }
 
 .rightcolumn .card img {
