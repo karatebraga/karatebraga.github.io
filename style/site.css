@@ -330,6 +330,218 @@ body {
   margin-bottom: 0;
 }
 
+.venue-map-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  margin: 0;
+  max-width: 100%;
+  min-height: 48px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg);
+  transition: background-color var(--transition), border-color var(--transition), box-shadow var(--transition);
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(184, 61, 61, 0.12);
+}
+/* Hand / tap cue: card is clickable (mobile-friendly) */
+.venue-map-link::after {
+  content: " 👆";
+  flex-shrink: 0;
+  font-size: 1.15em;
+  line-height: 1;
+  opacity: 0.85;
+}
+.venue-map-link:hover::after,
+.venue-map-link:focus-visible::after {
+  opacity: 1;
+}
+.venue-map-link:hover {
+  background: rgba(184, 61, 61, 0.06);
+  border-color: var(--color-primary-light);
+  box-shadow: var(--shadow-sm);
+}
+.venue-map-link .venue-map-link__pin {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  margin-top: 0.1em;
+  color: var(--color-primary);
+}
+.venue-map-link:hover .venue-map-link__pin {
+  color: var(--color-primary-dark);
+}
+.venue-map-link__text {
+  flex: 1;
+  text-align: left;
+}
+.venue-map-link__name {
+  display: block;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--space-xs);
+}
+.venue-map-link__address {
+  display: block;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  font-style: normal;
+}
+.venue-map-link:hover .venue-map-link__address {
+  color: var(--color-text);
+}
+
+
+.seminar-summary .card {
+  margin-top: var(--space-xl);
+}
+.seminar-summary .card:first-child {
+  margin-top: 0;
+}
+
+/* Hero block */
+.seminar-hero {
+  border-top: 4px solid var(--color-primary);
+  padding-top: var(--space-xl);
+}
+.seminar-hero__title {
+  margin: 0 0 var(--space-sm);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.seminar-hero__promo {
+  margin: 0 0 var(--space-md);
+  font-size: var(--font-size-base);
+  font-weight: 600;
+  color: var(--color-primary);
+}
+.seminar-hero__name {
+  margin: 0 0 var(--space-xs);
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+}
+.seminar-hero__location {
+  margin: 0 0 var(--space-lg);
+  font-size: var(--font-size-base);
+  color: var(--color-text-muted);
+  font-style: normal;
+}
+.seminar-hero__cta {
+  display: inline-block;
+  margin-bottom: var(--space-sm);
+}
+.seminar-hero__hint {
+  margin: 0;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  font-style: normal;
+}
+.seminar-hero__poster {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-xl);
+  border-top: 1px solid var(--color-border);
+}
+
+/* Section headings (no underline) */
+.seminar-summary .seminar-card__heading {
+  margin: 0 0 var(--space-md);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-text);
+  text-align: center;
+  padding-bottom: var(--space-sm);
+  border-bottom: 2px solid var(--color-primary);
+}
+
+/* Training schedule list */
+.seminar-schedule {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.seminar-schedule__item {
+  display: grid;
+  grid-template-columns: 7em 1fr;
+  gap: var(--space-sm) var(--space-md);
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid var(--color-border);
+  align-items: baseline;
+}
+.seminar-schedule__item:last-child {
+  border-bottom: none;
+}
+.seminar-schedule__day {
+  font-weight: 700;
+  color: var(--color-text);
+}
+.seminar-schedule__time {
+  font-weight: 500;
+  color: var(--color-text);
+}
+.seminar-schedule__note {
+  grid-column: 2;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+@media screen and (max-width: 480px) {
+  .seminar-schedule__item {
+    grid-template-columns: 1fr;
+    gap: var(--space-xs);
+  }
+  .seminar-schedule__note {
+    grid-column: 1;
+  }
+}
+
+/* Dinner card */
+.seminar-dinner__info {
+  text-align: center;
+  margin-bottom: var(--space-lg);
+}
+.seminar-dinner__price {
+  margin: 0 0 var(--space-xs);
+  font-size: var(--font-size-lg);
+}
+.seminar-dinner__price strong {
+  color: var(--color-primary);
+}
+.seminar-dinner__price-note {
+  font-weight: normal;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-base);
+}
+.seminar-dinner__when {
+  margin: 0;
+  color: var(--color-text);
+}
+.seminar-dinner__venue-label {
+  margin: 0 0 var(--space-sm);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+#social-dinner .venue-map-link,
+#jantar-confraternizacao .venue-map-link {
+  margin-top: 0;
+}
+
 .main hr {
   border: 0;
   height: 1px;

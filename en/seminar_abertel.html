@@ -6,59 +6,74 @@ og_title: "Home Page | Karate Braga"
 og_description: "Our club was born in January of 2001. Find more about us, come visit us!"
 ---
 
-<div class="main">
+<div class="main seminar-summary">
     <div class="row">
         <div class="leftcolumn">
-            <div class="card" id="seminar-hero">
+            <div class="card seminar-hero" id="seminar-hero">
                 <div class="align_center">
-                    <h2>International Seminar</h2>
-                    <h2 style="color: #af4c4c">Exceptional Commemorative Price! Karate Braga 25 Years!</h2>
-                    <h1>André Bertel</h1>
-                    <h5><i>Braga - Portugal</i></h5>
-                    <a href="{{ site.registration_form_url }}" target="_blank" rel="noopener noreferrer"><button class="button button1">Registration</button></a>
-                    <p style="font-size: 0.875rem;"><i>(Click here to register)</i></p>
+                    <h2 class="seminar-hero__title">International Seminar</h2>
+                    <p class="seminar-hero__promo">Exceptional Commemorative Price! Karate Braga 25 Years!</p>
+                    <h1 class="seminar-hero__name">André Bertel</h1>
+                    <p class="seminar-hero__location">Braga — Portugal</p>
+                    <a href="{{ site.registration_form_url }}" target="_blank" rel="noopener noreferrer" class="button button1 seminar-hero__cta">Registration</a>
+                    <p class="seminar-hero__hint">Click here to register</p>
                 </div>
-                <div class="align_center">
+                <div class="align_center seminar-hero__poster">
                     {% include poster.html %}
                 </div>
             </div>
 
             <div class="card" id="training-schedule">
+                <h3 class="seminar-card__heading">Training Schedule</h3>
+                <ul class="seminar-schedule" aria-label="Training times">
+                    <li class="seminar-schedule__item">
+                        <span class="seminar-schedule__day">Friday</span>
+                        <span class="seminar-schedule__time">6:30 pm – 8:30 pm</span>
+                        <span class="seminar-schedule__note">Instructor and Black Belt Training</span>
+                    </li>
+                    <li class="seminar-schedule__item">
+                        <span class="seminar-schedule__day">Saturday</span>
+                        <span class="seminar-schedule__time">10:30 am – 12:30 pm and 2:00 pm – 4:00 pm</span>
+                    </li>
+                    <li class="seminar-schedule__item">
+                        <span class="seminar-schedule__day">Sunday</span>
+                        <span class="seminar-schedule__time">10:30 am – 12:30 pm and 2:00 pm – 4:00 pm</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="card" id="training-venue">
+                <h3 class="seminar-card__heading">Training venue</h3>
                 <div class="align_center">
-                    <h3><u>Training Schedule</u></h3>
-                </div>
-                <div class="align_center">
-                    <p>Friday: <strong>6:30 pm – 8:30 pm</strong></p>
-                    <p>Saturday: <strong>10:30 am – 12:30 pm</strong> and <strong>2:00 pm – 4:00 pm</strong></p>
-                    <p>Sunday: <strong>10:30 am – 12:30 pm</strong> and <strong>2:00 pm – 4:00 pm</strong></p>
+                    <a class="venue-map-link" href="https://maps.app.goo.gl/S1stnFVZouwR7BMj7" target="_blank" rel="noopener noreferrer">
+                        <svg class="venue-map-link__pin" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                        </svg>
+                        <span class="venue-map-link__text">
+                            <span class="venue-map-link__name">Real Sports Hall (Pavilhão Desportivo de Real)</span>
+                            <span class="venue-map-link__address">Rua Padre Manuel Guimarães, 4700-292 Real, Braga, Portugal</span>
+                        </span>
+                    </a>
                 </div>
             </div>
 
             <div class="card" id="social-dinner">
-                <div class="align_center">
-                    <h3><u>Social Dinner with Sensei André Bertel</u></h3>
+                <h3 class="seminar-card__heading">Social Dinner with Sensei André Bertel</h3>
+                <div class="seminar-dinner__info">
+                    <p class="seminar-dinner__price"><strong>25 euros</strong> <span class="seminar-dinner__price-note">(limited seats)</span></p>
+                    <p class="seminar-dinner__when"><strong>Saturday, June 6th</strong> at 8:00 pm</p>
                 </div>
+                <p class="seminar-dinner__venue-label">Venue</p>
                 <div class="align_center">
-                    <p><i style="color: grey;">To be confirmed</i></p>
-                </div>
-            </div>
-
-            <div class="card" id="training-venue">
-                <div class="align_center">
-                    <h3><u>Training venue</u></h3>
-                </div>
-                <div class="align_center">
-                    <p>Real Sports Hall (Pavilhão Desportivo de Real)</p>
-                    <p>(Rua Padre Manuel Guimarães, 4700-292 Real, Braga, Portugal)</p>
-                </div>
-            </div>
-
-            <div class="card" id="dinner-venue">
-                <div class="align_center">
-                    <h3><u>Dinner venue</u></h3>
-                </div>
-                <div class="align_center">
-                    <p><i style="color: grey;">To be confirmed</i></p>
+                <a class="venue-map-link" href="https://maps.app.goo.gl/bAY4antcJyWUszw86" target="_blank" rel="noopener noreferrer">
+                    <svg class="venue-map-link__pin" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                    </svg>
+                    <span class="venue-map-link__text">
+                        <span class="venue-map-link__name">Axis Basic Braga</span>
+                        <span class="venue-map-link__address">Largo da Estação 30, 4700-223 Braga</span>
+                    </span>
+                </a>
                 </div>
             </div>
         </div>
