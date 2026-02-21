@@ -330,6 +330,31 @@ body {
   margin-bottom: 0;
 }
 
+/* Card section heading (site-wide consistency) */
+.card__heading {
+  margin: 0 0 var(--space-md);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-text);
+  text-align: center;
+  padding-bottom: var(--space-sm);
+  border-bottom: 2px solid var(--color-primary);
+}
+.card__heading u {
+  text-decoration: none;
+}
+
+/* Highlight card (hero / featured) */
+.card--highlight {
+  border-top: 4px solid var(--color-primary);
+  padding-top: var(--space-xl);
+}
+
+/* Primary color utility */
+.text-primary {
+  color: var(--color-primary);
+}
+
 .venue-map-link {
   display: inline-flex;
   align-items: center;
@@ -612,6 +637,12 @@ body {
   color: white;
 }
 
+/* Button group spacing */
+.button + .button,
+a.button + a.button {
+  margin-left: var(--space-sm);
+}
+
 /* Links */
 a {
   color: var(--color-primary);
@@ -840,6 +871,14 @@ a:hover .fakeimg {
 /* ==========================================================================
    Contact form
    ========================================================================== */
+.card__meta {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+.card__meta a {
+  color: var(--color-primary);
+}
+
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
